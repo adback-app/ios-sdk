@@ -15,12 +15,12 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.0` or the latest available release.
+3. Select version `0.1.1` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Current Release
 
-`0.1.0` is the MVP package release for validating the public SwiftPM install path
+`0.1.1` is the MVP package release for validating the public SwiftPM install path
 and the initial SDK API surface. It includes:
 
 - A checked-in `AdbackSDK.xcframework` binary target.
@@ -62,6 +62,9 @@ running tests:
 ```swift
 Adback.reset()
 ```
+
+Passing an empty or whitespace-only SDK key does not crash the host app. The SDK
+clears local configuration and stays disabled until a valid key is configured.
 
 ## Network Boundary
 

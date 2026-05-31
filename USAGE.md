@@ -15,7 +15,7 @@ Adback.configure(
 )
 ```
 
-In `0.1.0`, `configure` stores local SDK configuration for the app process. The
+In `0.1.1`, `configure` stores local SDK configuration for the app process. The
 networked configure slice will fetch remote SDK config, including:
 
 - `sdk_enabled` and remote kill-switch state.
@@ -27,7 +27,7 @@ networked configure slice will fetch remote SDK config, including:
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. The `0.1.0` binary includes
+intent, trial start, and custom debug/funnel events. The `0.1.1` binary includes
 the v1 event/config model surface; background event delivery is planned after
 the configure/queue slice. SDK event payloads use `schema_version: 1` and
 snake_case wire fields.
