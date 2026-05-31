@@ -1,0 +1,19 @@
+# Adback iOS SDK Privacy Notes
+
+This public-wrapper privacy content must be reviewed before release.
+
+MVP commitments:
+
+- No IDFA collection by default.
+- No precise location, contacts, photos, clipboard contents, or installed-app
+  list collection.
+- Optional IDFV collection only when enabled by app/environment config as an iOS
+  install/debug/match signal.
+- User match data is sent only when the app developer passes it explicitly.
+- ASA tokens are sent only on the install resolve / Apple Ads attribution path,
+  never as normal event metadata.
+- SDK purchase/subscription revenue, StoreKit capture, transactions, and
+  `transaction_details` are out of MVP.
+
+`PrivacyInfo.xcprivacy` is currently a release placeholder and must be finalized
+against the exact binary behavior before publishing.
