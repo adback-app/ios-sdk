@@ -11,6 +11,7 @@ Adback iOS SDK binary.
 - Swift Package Manager install with a prebuilt `AdbackSDK.xcframework`
 - Networked SDK configuration for production and development apps
 - Automatic install resolve and automatic install event delivery
+- Optional Apple Ads attribution handoff without requiring ATT
 - Manual standard SDK event tracking with `Adback.track(...)`
 - Safe no-crash behavior for missing or empty SDK keys
 - RevenueCat, Superwall, App Store Server Notifications, and backend webhook
@@ -37,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.5` or the latest available release.
+3. Select version `0.1.6` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -50,6 +51,14 @@ Adback.configure(apiKey: "adbk_pk_live_...")
 
 `configure` fetches remote SDK config, resolves the install, and sends the
 automatic install event in the background.
+
+To enable Apple Ads attribution on iOS 14.3+:
+
+```swift
+Adback.enableAppleAdsAttribution()
+```
+
+This does not request App Tracking Transparency permission.
 
 For development builds:
 

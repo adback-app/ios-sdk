@@ -4,6 +4,12 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.6 - 2026-06-01
+
+### Added
+
+- Added optional Apple Ads attribution through `Adback.enableAppleAdsAttribution()`.
+
 ## 0.1.5 - 2026-06-01
 
 ### Changed

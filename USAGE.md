@@ -15,13 +15,21 @@ Adback.configure(
 )
 ```
 
-In `0.1.5`, `configure` starts SDK bootstrap in the background. It fetches the
+In `0.1.6`, `configure` starts SDK bootstrap in the background. It fetches the
 lean remote SDK config: `app_id`, `sdk_enabled`, `use_install_detection_v2`,
 `values`, and `lockWindows`.
 
 After config succeeds, the SDK resolves the install with
 `POST /v1/sdk/installs/resolve`, then sends an automatic `INSTALL` SDK event
 with `POST /v1/sdk/events`.
+
+To enable Apple Ads attribution on iOS 14.3+, call:
+
+```swift
+Adback.enableAppleAdsAttribution()
+```
+
+This does not request App Tracking Transparency permission.
 
 Call `flush` when you need to wait for pending SDK delivery in debug builds or
 tests:
@@ -33,7 +41,7 @@ await Adback.flush()
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. `0.1.5` sends automatic
+intent, trial start, and custom debug/funnel events. `0.1.6` sends automatic
 install activity and exposes manual standard event tracking:
 
 ```swift

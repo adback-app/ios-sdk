@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -module-name AdbackSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AdServices
 import Darwin
 import Foundation
 import Swift
@@ -68,6 +69,7 @@ public enum Adback {
   #endif
   public static func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   public static func flush() async
+  public static func enableAppleAdsAttribution()
 }
 @_hasMissingDesignatedInitializers final public class AdbackClient {
   convenience public init()
@@ -88,6 +90,7 @@ public enum Adback {
   final public func reset()
   final public func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   final public func flush() async
+  final public func enableAppleAdsAttribution()
   @objc deinit
 }
 public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Equatable {
