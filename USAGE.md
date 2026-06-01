@@ -15,7 +15,7 @@ Adback.configure(
 )
 ```
 
-In `0.1.3`, `configure` starts SDK bootstrap in the background. It fetches the
+In `0.1.4`, `configure` starts SDK bootstrap in the background. It fetches the
 lean remote SDK config: `app_id`, `sdk_enabled`, `use_install_detection_v2`,
 `values`, and `lockWindows`.
 
@@ -35,7 +35,7 @@ await Adback.flush()
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. `0.1.3` sends automatic
+intent, trial start, and custom debug/funnel events. `0.1.4` sends automatic
 install activity and exposes manual standard event tracking:
 
 ```swift
