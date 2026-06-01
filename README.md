@@ -38,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.6` or the latest available release.
+3. Select version `0.1.7` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -90,6 +90,29 @@ Use `flush` in debug flows or tests when you need to wait for pending delivery:
 ```swift
 await Adback.flush()
 ```
+
+## Attribution Handoff
+
+Use `getAttributionParams()` after configuration to pass Adback attribution
+values into paywall or revenue SDK user attributes:
+
+```swift
+if let attributes = await Adback.getAttributionParams() {
+  Purchases.shared.setAttributes(attributes)
+
+  let superwallAttributes: [String: Any?] = attributes.mapValues { $0 }
+  Superwall.shared.setUserAttributes(superwallAttributes)
+}
+```
+
+`getAttributionParams()` waits for the initial SDK bootstrap if it is still in
+flight. `Adback.getAdbackId()` returns the resolved Adback join ID once
+available.
+
+The base attribute keys are `adback_id`, `adback_match_confidence`, and
+`adback_source`. Paid-click matches may also include campaign, ad group, ad,
+creative, keyword, click, landing, deeplink, and network keys. Missing values
+are omitted.
 
 ## Reset
 

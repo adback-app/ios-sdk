@@ -4,6 +4,12 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.7 - 2026-06-01
+
+### Added
+
+- Added `Adback.getAdbackId()` and `Adback.getAttributionParams()` for attribution handoff integrations.
+
 ## 0.1.6 - 2026-06-01
 
 ### Added

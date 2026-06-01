@@ -15,7 +15,7 @@ Adback.configure(
 )
 ```
 
-In `0.1.6`, `configure` starts SDK bootstrap in the background. It fetches the
+In `0.1.7`, `configure` starts SDK bootstrap in the background. It fetches the
 lean remote SDK config: `app_id`, `sdk_enabled`, `use_install_detection_v2`,
 `values`, and `lockWindows`.
 
@@ -38,10 +38,29 @@ tests:
 await Adback.flush()
 ```
 
+## Attribution Handoff
+
+Use the resolved Adback attributes with Superwall, RevenueCat, or your backend:
+
+```swift
+if let attributes = await Adback.getAttributionParams() {
+  Purchases.shared.setAttributes(attributes)
+
+  let superwallAttributes: [String: Any?] = attributes.mapValues { $0 }
+  Superwall.shared.setUserAttributes(superwallAttributes)
+}
+
+let adbackId = Adback.getAdbackId()
+```
+
+`getAttributionParams()` waits for initial bootstrap if it is still running.
+`getAdbackId()` is synchronous and returns `nil` until install resolve has
+completed.
+
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. `0.1.6` sends automatic
+intent, trial start, and custom debug/funnel events. `0.1.7` sends automatic
 install activity and exposes manual standard event tracking:
 
 ```swift

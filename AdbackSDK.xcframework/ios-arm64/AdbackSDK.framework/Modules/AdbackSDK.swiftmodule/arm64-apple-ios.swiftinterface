@@ -67,6 +67,12 @@ public enum Adback {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func currentConfiguration() -> AdbackSDK.AdbackConfiguration?
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getAdbackId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getAttributionParams() async -> [Swift.String : Swift.String]?
+  #endif
   public static func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   public static func flush() async
   public static func enableAppleAdsAttribution()
@@ -85,6 +91,12 @@ public enum Adback {
   final public var remoteConfig: AdbackSDK.AdbackRemoteConfig? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getAdbackId() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getAttributionParams() async -> [Swift.String : Swift.String]?
   #endif
   final public func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
   final public func reset()
