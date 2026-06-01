@@ -12,6 +12,20 @@
         "moduleName": "AdbackSDK"
       },
       {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AdbackEnvironment",
         "printedName": "AdbackEnvironment",
@@ -8783,226 +8797,6 @@
           },
           {
             "kind": "Var",
-            "name": "debug",
-            "printedName": "debug",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DebugConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.DebugConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV5debugAC05DebugD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV5debugAC05DebugD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DebugConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.DebugConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV5debugAC05DebugD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV5debugAC05DebugD0Vvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "endpoints",
-            "printedName": "endpoints",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EndpointConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.EndpointConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV9endpointsAC08EndpointD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV9endpointsAC08EndpointD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EndpointConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.EndpointConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV9endpointsAC08EndpointD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV9endpointsAC08EndpointD0Vvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackEnvironment",
-                "printedName": "AdbackSDK.AdbackEnvironment",
-                "usr": "s:9AdbackSDK0A11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV11environmentAA0A11EnvironmentOvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV11environmentAA0A11EnvironmentOvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackEnvironment",
-                    "printedName": "AdbackSDK.AdbackEnvironment",
-                    "usr": "s:9AdbackSDK0A11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV11environmentAA0A11EnvironmentOvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV11environmentAA0A11EnvironmentOvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "features",
-            "printedName": "features",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FeatureConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.FeatureConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV8featuresAC07FeatureD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV8featuresAC07FeatureD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.FeatureConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV8featuresAC07FeatureD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV8featuresAC07FeatureD0Vvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "killSwitch",
-            "printedName": "killSwitch",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KillSwitchConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.KillSwitchConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV10killSwitchAC04KillfD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV10killSwitchAC04KillfD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KillSwitchConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.KillSwitchConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV10killSwitchAC04KillfD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV10killSwitchAC04KillfD0Vvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "lockWindows",
             "printedName": "lockWindows",
             "children": [
@@ -9067,94 +8861,6 @@
                 "declKind": "Accessor",
                 "usr": "s:9AdbackSDK0A12RemoteConfigV11lockWindowsSDyS2SGvg",
                 "mangledName": "$s9AdbackSDK0A12RemoteConfigV11lockWindowsSDyS2SGvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "privacy",
-            "printedName": "privacy",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PrivacyConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.PrivacyConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV7privacyAC07PrivacyD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV7privacyAC07PrivacyD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrivacyConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.PrivacyConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV7privacyAC07PrivacyD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV7privacyAC07PrivacyD0Vvg",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "QueueConfig",
-                "printedName": "AdbackSDK.AdbackRemoteConfig.QueueConfig",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV5queueAC05QueueD0Vvp",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV5queueAC05QueueD0Vvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "QueueConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.QueueConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV5queueAC05QueueD0Vvg",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV5queueAC05QueueD0Vvg",
                 "moduleName": "AdbackSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9306,1882 +9012,6 @@
                 "moduleName": "AdbackSDK",
                 "implicit": true,
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "DebugConfig",
-            "printedName": "DebugConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "enabled",
-                "printedName": "enabled",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V7enabledSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V7enabledSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V7enabledSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V7enabledSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "includeMatchTraceID",
-                "printedName": "includeMatchTraceID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V19includeMatchTraceIDSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V19includeMatchTraceIDSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V19includeMatchTraceIDSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V19includeMatchTraceIDSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "logLevel",
-                "printedName": "logLevel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackLogLevel",
-                    "printedName": "AdbackSDK.AdbackLogLevel",
-                    "usr": "s:9AdbackSDK0A8LogLevelO"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V8logLevelAA0a3LogG0Ovp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V8logLevelAA0a3LogG0Ovp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdbackLogLevel",
-                        "printedName": "AdbackSDK.AdbackLogLevel",
-                        "usr": "s:9AdbackSDK0A8LogLevelO"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V8logLevelAA0a3LogG0Ovg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V8logLevelAA0a3LogG0Ovg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DebugConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.DebugConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DebugConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.DebugConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DebugConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.DebugConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV05DebugD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV05DebugD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "EndpointConfig",
-            "printedName": "EndpointConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "apiBaseURL",
-                "printedName": "apiBaseURL",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V10apiBaseURL10Foundation0H0Vvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V10apiBaseURL10Foundation0H0Vvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V10apiBaseURL10Foundation0H0Vvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V10apiBaseURL10Foundation0H0Vvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "config",
-                "printedName": "config",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V6configSSvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V6configSSvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V6configSSvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V6configSSvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "events",
-                "printedName": "events",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V6eventsSSvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V6eventsSSvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V6eventsSSvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V6eventsSSvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "installResolve",
-                "printedName": "installResolve",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V14installResolveSSvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V14installResolveSSvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V14installResolveSSvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V14installResolveSSvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EndpointConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.EndpointConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EndpointConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.EndpointConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "EndpointConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.EndpointConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV08EndpointD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV08EndpointD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "FeatureConfig",
-            "printedName": "FeatureConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "appleAdsAttribution",
-                "printedName": "appleAdsAttribution",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V19appleAdsAttributionSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V19appleAdsAttributionSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V19appleAdsAttributionSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V19appleAdsAttributionSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "attributionParams",
-                "printedName": "attributionParams",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V17attributionParamsSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V17attributionParamsSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V17attributionParamsSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V17attributionParamsSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "collectIDFV",
-                "printedName": "collectIDFV",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V11collectIDFVSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V11collectIDFVSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V11collectIDFVSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V11collectIDFVSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "debugMode",
-                "printedName": "debugMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V9debugModeSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V9debugModeSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V9debugModeSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V9debugModeSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "events",
-                "printedName": "events",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V6eventsSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V6eventsSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V6eventsSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V6eventsSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "installMatchSignals",
-                "printedName": "installMatchSignals",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V19installMatchSignalsSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V19installMatchSignalsSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V19installMatchSignalsSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V19installMatchSignalsSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "remoteKillSwitch",
-                "printedName": "remoteKillSwitch",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V16remoteKillSwitchSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V16remoteKillSwitchSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V16remoteKillSwitchSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V16remoteKillSwitchSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.FeatureConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.FeatureConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.FeatureConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV07FeatureD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV07FeatureD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "KillSwitchConfig",
-            "printedName": "KillSwitchConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "disabledReason",
-                "printedName": "disabledReason",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V14disabledReasonSSSgvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V14disabledReasonSSSgvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V14disabledReasonSSSgvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V14disabledReasonSSSgvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "sdkEnabled",
-                "printedName": "sdkEnabled",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V10sdkEnabledSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V10sdkEnabledSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V10sdkEnabledSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V10sdkEnabledSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KillSwitchConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.KillSwitchConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KillSwitchConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.KillSwitchConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KillSwitchConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.KillSwitchConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV010KillSwitchD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV010KillSwitchD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "PrivacyConfig",
-            "printedName": "PrivacyConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "allowCustomerUserID",
-                "printedName": "allowCustomerUserID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V19allowCustomerUserIDSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V19allowCustomerUserIDSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V19allowCustomerUserIDSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V19allowCustomerUserIDSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "allowUserMatchData",
-                "printedName": "allowUserMatchData",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V18allowUserMatchDataSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V18allowUserMatchDataSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V18allowUserMatchDataSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V18allowUserMatchDataSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "collectAdvertisingIDs",
-                "printedName": "collectAdvertisingIDs",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V21collectAdvertisingIDsSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V21collectAdvertisingIDsSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V21collectAdvertisingIDsSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V21collectAdvertisingIDsSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "collectIDFV",
-                "printedName": "collectIDFV",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V11collectIDFVSbvp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V11collectIDFVSbvp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V11collectIDFVSbvg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V11collectIDFVSbvg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrivacyConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.PrivacyConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrivacyConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.PrivacyConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrivacyConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.PrivacyConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV07PrivacyD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV07PrivacyD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "QueueConfig",
-            "printedName": "QueueConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "flushIntervalSeconds",
-                "printedName": "flushIntervalSeconds",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V20flushIntervalSecondsSivp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V20flushIntervalSecondsSivp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V20flushIntervalSecondsSivg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V20flushIntervalSecondsSivg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "maxBatchSize",
-                "printedName": "maxBatchSize",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V12maxBatchSizeSivp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V12maxBatchSizeSivp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V12maxBatchSizeSivg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V12maxBatchSizeSivg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "retryBackoffBaseSeconds",
-                "printedName": "retryBackoffBaseSeconds",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V23retryBackoffBaseSecondsSivp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V23retryBackoffBaseSecondsSivp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V23retryBackoffBaseSecondsSivg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V23retryBackoffBaseSecondsSivg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "retryBackoffMaxSeconds",
-                "printedName": "retryBackoffMaxSeconds",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V22retryBackoffMaxSecondsSivp",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V22retryBackoffMaxSecondsSivp",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V22retryBackoffMaxSecondsSivg",
-                    "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V22retryBackoffMaxSecondsSivg",
-                    "moduleName": "AdbackSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "QueueConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.QueueConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V6encode2toys7Encoder_p_tKF",
-                "moduleName": "AdbackSDK",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "QueueConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.QueueConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "QueueConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig.QueueConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V2eeoiySbAE_AEtFZ",
-                "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V2eeoiySbAE_AEtFZ",
-                "moduleName": "AdbackSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:9AdbackSDK0A12RemoteConfigV05QueueD0V",
-            "mangledName": "$s9AdbackSDK0A12RemoteConfigV05QueueD0V",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               }
             ]
           },
@@ -11425,616 +9255,469 @@
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 706,
       "length": 24,
       "value": "\"https:\/\/api.adback.app\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 668,
+      "offset": 752,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 741,
+      "offset": 825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 1588,
+      "offset": 1672,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 4336,
+      "offset": 4420,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 12329,
+      "offset": 14563,
       "length": 7,
-      "value": "\"0.1.2\""
+      "value": "\"0.1.3\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 13706,
+      "offset": 15940,
       "length": 10,
       "value": "\"bundleId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 13754,
+      "offset": 15988,
       "length": 11,
       "value": "\"installId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
+      "kind": "StringLiteral",
+      "offset": 17427,
+      "length": 10,
+      "value": "\"bundleId\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 14565,
+      "offset": 18965,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 14930,
+      "offset": 19330,
       "length": 9,
       "value": "\"clickId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 14959,
+      "offset": 19359,
       "length": 9,
       "value": "\"eventId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15141,
+      "offset": 19541,
       "length": 10,
       "value": "\"adbackId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15544,
+      "offset": 19944,
       "length": 9,
       "value": "\"INSTALL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15569,
+      "offset": 19969,
       "length": 7,
       "value": "\"LOGIN\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15593,
+      "offset": 19993,
       "length": 9,
       "value": "\"SIGN_UP\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15622,
+      "offset": 20022,
       "length": 13,
       "value": "\"ADD_TO_CART\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15659,
+      "offset": 20059,
       "length": 17,
       "value": "\"ADD_TO_WISHLIST\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15703,
+      "offset": 20103,
       "length": 19,
       "value": "\"INITIATE_CHECKOUT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15743,
+      "offset": 20143,
       "length": 13,
       "value": "\"START_TRIAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15777,
+      "offset": 20177,
       "length": 13,
       "value": "\"LEVEL_START\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15814,
+      "offset": 20214,
       "length": 16,
       "value": "\"LEVEL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15857,
+      "offset": 20257,
       "length": 19,
       "value": "\"TUTORIAL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15893,
+      "offset": 20293,
       "length": 8,
       "value": "\"SEARCH\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15920,
+      "offset": 20320,
       "length": 11,
       "value": "\"VIEW_ITEM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15953,
+      "offset": 20353,
       "length": 14,
       "value": "\"VIEW_CONTENT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15983,
+      "offset": 20383,
       "length": 7,
       "value": "\"SHARE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 16223,
+      "offset": 20623,
       "length": 10,
       "value": "\"STANDARD\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 16250,
+      "offset": 20650,
       "length": 8,
       "value": "\"CUSTOM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 16341,
+      "offset": 20741,
       "length": 11,
       "value": "\"AUTOMATIC\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 16369,
+      "offset": 20769,
       "length": 8,
       "value": "\"MANUAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17754,
+      "offset": 22154,
       "length": 12,
       "value": "\"adback-ios\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18083,
+      "offset": 22483,
       "length": 14,
       "value": "\"wrapper_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18124,
+      "offset": 22524,
       "length": 17,
       "value": "\"wrapper_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 18544,
+      "offset": 22944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19718,
+      "offset": 24118,
       "length": 11,
       "value": "\"app_build\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19752,
+      "offset": 24152,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19786,
+      "offset": 24186,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19821,
+      "offset": 24221,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19869,
+      "offset": 24269,
       "length": 10,
       "value": "\"is_debug\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19914,
+      "offset": 24314,
       "length": 9,
       "value": "\"os_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19945,
+      "offset": 24345,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 20205,
+      "offset": 24605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 20486,
+      "offset": 24886,
       "length": 27,
       "value": "\"ad_services_token_present\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 20536,
+      "offset": 24936,
       "length": 13,
       "value": "\"deeplink_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 20574,
+      "offset": 24974,
       "length": 16,
       "value": "\"match_trace_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21276,
+      "offset": 25676,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21329,
+      "offset": 25729,
       "length": 13,
       "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21364,
+      "offset": 25764,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21397,
+      "offset": 25797,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 23031,
+      "offset": 27431,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 24129,
+      "offset": 28529,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 25988,
+      "offset": 30388,
       "length": 11,
       "value": "\"adback_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26017,
+      "offset": 30417,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26076,
+      "offset": 30476,
       "length": 21,
       "value": "\"client_timestamp_ms\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26141,
+      "offset": 30541,
       "length": 18,
       "value": "\"customer_user_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26200,
+      "offset": 30600,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26232,
+      "offset": 30632,
       "length": 12,
       "value": "\"event_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26266,
+      "offset": 30666,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26300,
+      "offset": 30700,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26376,
+      "offset": 30776,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26429,
+      "offset": 30829,
       "length": 14,
       "value": "\"trigger_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 26469,
+      "offset": 30869,
       "length": 17,
       "value": "\"user_match_data\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 26943,
+      "offset": 31343,
       "length": 332,
       "value": "[\"ad_services_token\", \"ad_services_token_present\", \"adback_id\", \"appstack_id\", \"asa_token\", \"customer_user_id\", \"date_of_birth\", \"dob\", \"email\", \"external_id\", \"first_name\", \"idfa\", \"idfv\", \"install_id\", \"last_name\", \"phone\", \"phone_number\", \"transaction\", \"transaction_details\", \"user_id\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28020,
-      "length": 24,
-      "value": "\"include_match_trace_id\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28067,
-      "length": 11,
-      "value": "\"log_level\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28338,
-      "length": 14,
-      "value": "\"api_base_url\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28417,
-      "length": 17,
-      "value": "\"install_resolve\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28824,
-      "length": 23,
-      "value": "\"apple_ads_attribution\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28879,
-      "length": 20,
-      "value": "\"attribution_params\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28925,
-      "length": 14,
-      "value": "\"collect_idfv\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 28963,
-      "length": 12,
-      "value": "\"debug_mode\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29027,
-      "length": 23,
-      "value": "\"install_match_signals\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29081,
-      "length": 20,
-      "value": "\"remote_kill_switch\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29309,
-      "length": 17,
-      "value": "\"disabled_reason\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29351,
-      "length": 13,
-      "value": "\"sdk_enabled\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29660,
-      "length": 24,
-      "value": "\"allow_customer_user_id\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29717,
-      "length": 23,
-      "value": "\"allow_user_match_data\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29776,
-      "length": 25,
-      "value": "\"collect_advertising_ids\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 29827,
-      "length": 14,
-      "value": "\"collect_idfv\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30140,
-      "length": 24,
-      "value": "\"flush_interval_seconds\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30191,
-      "length": 16,
-      "value": "\"max_batch_size\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30245,
-      "length": 28,
-      "value": "\"retry_backoff_base_seconds\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30310,
-      "length": 27,
-      "value": "\"retry_backoff_max_seconds\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30405,
+      "offset": 31960,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 30509,
-      "length": 13,
-      "value": "\"kill_switch\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30546,
-      "length": 14,
-      "value": "\"lock_windows\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 30615,
+      "offset": 32012,
       "length": 13,
       "value": "\"sdk_enabled\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 30662,
+      "offset": 32059,
       "length": 26,
       "value": "\"use_install_detection_v2\""
     }

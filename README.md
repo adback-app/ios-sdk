@@ -37,7 +37,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.2` or the latest available release.
+3. Select version `0.1.3` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization

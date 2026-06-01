@@ -2,8 +2,10 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -module-name AdbackSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Darwin
 import Foundation
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -247,71 +249,10 @@ public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable {
 }
 public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
   public let appID: Swift.String
-  public let debug: AdbackSDK.AdbackRemoteConfig.DebugConfig
-  public let endpoints: AdbackSDK.AdbackRemoteConfig.EndpointConfig
-  public let environment: AdbackSDK.AdbackEnvironment
-  public let features: AdbackSDK.AdbackRemoteConfig.FeatureConfig
-  public let killSwitch: AdbackSDK.AdbackRemoteConfig.KillSwitchConfig
   public let lockWindows: [Swift.String : Swift.String]
-  public let privacy: AdbackSDK.AdbackRemoteConfig.PrivacyConfig
-  public let queue: AdbackSDK.AdbackRemoteConfig.QueueConfig
   public let sdkEnabled: Swift.Bool
   public let useInstallDetectionV2: Swift.Bool
   public let values: [Swift.String]
-  public struct DebugConfig : Swift.Codable, Swift.Equatable {
-    public let enabled: Swift.Bool
-    public let includeMatchTraceID: Swift.Bool
-    public let logLevel: AdbackSDK.AdbackLogLevel
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.DebugConfig, b: AdbackSDK.AdbackRemoteConfig.DebugConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct EndpointConfig : Swift.Codable, Swift.Equatable {
-    public let apiBaseURL: Foundation.URL
-    public let config: Swift.String
-    public let events: Swift.String
-    public let installResolve: Swift.String
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.EndpointConfig, b: AdbackSDK.AdbackRemoteConfig.EndpointConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct FeatureConfig : Swift.Codable, Swift.Equatable {
-    public let appleAdsAttribution: Swift.Bool
-    public let attributionParams: Swift.Bool
-    public let collectIDFV: Swift.Bool
-    public let debugMode: Swift.Bool
-    public let events: Swift.Bool
-    public let installMatchSignals: Swift.Bool
-    public let remoteKillSwitch: Swift.Bool
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.FeatureConfig, b: AdbackSDK.AdbackRemoteConfig.FeatureConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct KillSwitchConfig : Swift.Codable, Swift.Equatable {
-    public let disabledReason: Swift.String?
-    public let sdkEnabled: Swift.Bool
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.KillSwitchConfig, b: AdbackSDK.AdbackRemoteConfig.KillSwitchConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct PrivacyConfig : Swift.Codable, Swift.Equatable {
-    public let allowCustomerUserID: Swift.Bool
-    public let allowUserMatchData: Swift.Bool
-    public let collectAdvertisingIDs: Swift.Bool
-    public let collectIDFV: Swift.Bool
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.PrivacyConfig, b: AdbackSDK.AdbackRemoteConfig.PrivacyConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct QueueConfig : Swift.Codable, Swift.Equatable {
-    public let flushIntervalSeconds: Swift.Int
-    public let maxBatchSize: Swift.Int
-    public let retryBackoffBaseSeconds: Swift.Int
-    public let retryBackoffMaxSeconds: Swift.Int
-    public static func == (a: AdbackSDK.AdbackRemoteConfig.QueueConfig, b: AdbackSDK.AdbackRemoteConfig.QueueConfig) -> Swift.Bool
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
   public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
