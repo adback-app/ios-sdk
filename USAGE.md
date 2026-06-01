@@ -15,15 +15,13 @@ Adback.configure(
 )
 ```
 
-In `0.1.4`, `configure` starts SDK bootstrap in the background. It fetches the
+In `0.1.5`, `configure` starts SDK bootstrap in the background. It fetches the
 lean remote SDK config: `app_id`, `sdk_enabled`, `use_install_detection_v2`,
 `values`, and `lockWindows`.
 
 After config succeeds, the SDK resolves the install with
-`POST /v1/sdk/installs/resolve`. The install resolve request includes
-Adback install-match headers for SDK version, app/build, OS, device model,
-timezone, locale, screen dimensions, and install ID. The SDK then sends an
-automatic `INSTALL` SDK event with `POST /v1/sdk/events`.
+`POST /v1/sdk/installs/resolve`, then sends an automatic `INSTALL` SDK event
+with `POST /v1/sdk/events`.
 
 Call `flush` when you need to wait for pending SDK delivery in debug builds or
 tests:
@@ -35,7 +33,7 @@ await Adback.flush()
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. `0.1.4` sends automatic
+intent, trial start, and custom debug/funnel events. `0.1.5` sends automatic
 install activity and exposes manual standard event tracking:
 
 ```swift

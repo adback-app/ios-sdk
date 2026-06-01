@@ -4,6 +4,12 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.5 - 2026-06-01
+
+### Changed
+
+- Improved SDK bootstrap compatibility.
+
 ## 0.1.4 - 2026-06-01
 
 ### Changed
