@@ -47,7 +47,8 @@ public struct AdbackOptions : Swift.Equatable {
   public var debug: Swift.Bool
   public var environment: AdbackSDK.AdbackEnvironment
   public var logLevel: AdbackSDK.AdbackLogLevel
-  public init(environment: AdbackSDK.AdbackEnvironment = .production, apiBaseURL: Foundation.URL = URL(string: "https://api.adback.app")!, debug: Swift.Bool = false, logLevel: AdbackSDK.AdbackLogLevel = .error)
+  public var networkEnabled: Swift.Bool
+  public init(environment: AdbackSDK.AdbackEnvironment = .production, apiBaseURL: Foundation.URL = URL(string: "https://api.adback.app")!, debug: Swift.Bool = false, logLevel: AdbackSDK.AdbackLogLevel = .error, networkEnabled: Swift.Bool = true)
   public static func == (a: AdbackSDK.AdbackOptions, b: AdbackSDK.AdbackOptions) -> Swift.Bool
 }
 public struct AdbackConfiguration : Swift.Equatable {
@@ -62,9 +63,11 @@ public enum Adback {
   #if compiler(>=5.3) && $NonescapableTypes
   public static func currentConfiguration() -> AdbackSDK.AdbackConfiguration?
   #endif
+  public static func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  public static func flush() async
 }
-final public class AdbackClient {
-  public init()
+@_hasMissingDesignatedInitializers final public class AdbackClient {
+  convenience public init()
   final public var isConfigured: Swift.Bool {
     get
   }
@@ -73,8 +76,15 @@ final public class AdbackClient {
     get
   }
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var remoteConfig: AdbackSDK.AdbackRemoteConfig? {
+    get
+  }
+  #endif
   final public func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
   final public func reset()
+  final public func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  final public func flush() async
   @objc deinit
 }
 public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Equatable {

@@ -15,8 +15,8 @@ Adback.configure(
 )
 ```
 
-In `0.1.1`, `configure` stores local SDK configuration for the app process. The
-networked configure slice will fetch remote SDK config, including:
+In `0.1.2`, `configure` starts SDK bootstrap in the background. It fetches
+remote SDK config, including:
 
 - `sdk_enabled` and remote kill-switch state.
 - SDK endpoint paths.
@@ -24,13 +24,29 @@ networked configure slice will fetch remote SDK config, including:
 - Debug mode defaults.
 - Privacy gates such as optional IDFV collection.
 
+After config succeeds, the SDK resolves the install with
+`POST /v1/sdk/installs/resolve` and sends an automatic `INSTALL` SDK event with
+`POST /v1/sdk/events`.
+
+Call `flush` when you need to wait for pending SDK delivery in debug builds or
+tests:
+
+```swift
+await Adback.flush()
+```
+
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
-intent, trial start, and custom debug/funnel events. The `0.1.1` binary includes
-the v1 event/config model surface; background event delivery is planned after
-the configure/queue slice. SDK event payloads use `schema_version: 1` and
-snake_case wire fields.
+intent, trial start, and custom debug/funnel events. `0.1.2` sends automatic
+install activity and exposes manual standard event tracking:
+
+```swift
+Adback.track(.signUp)
+Adback.track(.startTrial, properties: ["plan": .string("annual")])
+```
+
+SDK event payloads use `schema_version: 1` and snake_case wire fields.
 
 Do not send purchase/subscription revenue through the mobile SDK. Revenue truth
 comes from RevenueCat, Superwall, App Store Server Notifications, or customer

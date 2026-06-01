@@ -9,9 +9,10 @@ Adback iOS SDK binary.
 ## Features
 
 - Swift Package Manager install with a prebuilt `AdbackSDK.xcframework`
-- Lightweight SDK configuration for production and development apps
+- Networked SDK configuration for production and development apps
+- Automatic install resolve and automatic install event delivery
+- Manual standard SDK event tracking with `Adback.track(...)`
 - Safe no-crash behavior for missing or empty SDK keys
-- MVP event and attribution model types for upcoming delivery flows
 - RevenueCat, Superwall, App Store Server Notifications, and backend webhook
   friendly attribution handoff
 
@@ -36,7 +37,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.1` or the latest available release.
+3. Select version `0.1.2` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -46,6 +47,9 @@ import AdbackSDK
 
 Adback.configure(apiKey: "adbk_pk_live_...")
 ```
+
+`configure` fetches remote SDK config, resolves the install, and sends the
+automatic install event in the background.
 
 For development builds:
 
@@ -64,6 +68,19 @@ Adback.configure(
 
 Passing an empty or whitespace-only SDK key does not crash the host app. The SDK
 clears local configuration and stays disabled until a valid key is configured.
+
+## Events
+
+```swift
+Adback.track(.signUp)
+Adback.track(.startTrial, properties: ["plan": .string("annual")])
+```
+
+Use `flush` in debug flows or tests when you need to wait for pending delivery:
+
+```swift
+await Adback.flush()
+```
 
 ## Reset
 

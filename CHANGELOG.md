@@ -4,6 +4,17 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.2 - 2026-06-01
+
+### Added
+
+- Added remote SDK configuration and automatic install delivery.
+- Added `Adback.track(...)` and `Adback.flush()` for manual event delivery.
+
+### Reliability
+
+- Invalid SDK keys now disable the SDK without crashing the host app.
+
 ## 0.1.1 - 2026-05-31
 
 ### Fixed
