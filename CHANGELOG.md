@@ -4,6 +4,12 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.8 - 2026-06-11
+
+### Added
+
+- Added wrapper name and version reporting for React Native and Flutter SDKs.
+
 ## 0.1.7 - 2026-06-01
 
 ### Added

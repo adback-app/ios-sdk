@@ -38,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.7` or the latest available release.
+3. Select version `0.1.8` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -130,6 +130,12 @@ Superwall, App Store Server Notifications, or your backend integration.
 
 The mobile SDK does not expose SDK-side purchase, subscription, StoreKit capture,
 manual revenue, transaction, or `transaction_details` APIs for the MVP.
+
+## React Native and Flutter Wrappers
+
+Adback's React Native and Flutter packages wrap this iOS binary SDK on iOS.
+Those wrappers set SDK wrapper metadata internally so events can be identified
+as React Native or Flutter traffic without requiring extra app code.
 
 ## Privacy
 
