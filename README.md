@@ -38,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.8` or the latest available release.
+3. Select version `0.1.9` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -84,6 +84,9 @@ clears local configuration and stays disabled until a valid key is configured.
 Adback.track(.signUp)
 Adback.track(.startTrial, properties: ["plan": .string("annual")])
 ```
+
+`INSTALL` is sent automatically during configuration. Do not send it with
+`Adback.track`; duplicate manual install calls are ignored.
 
 Use `flush` in debug flows or tests when you need to wait for pending delivery:
 

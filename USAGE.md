@@ -68,6 +68,9 @@ Adback.track(.signUp)
 Adback.track(.startTrial, properties: ["plan": .string("annual")])
 ```
 
+`INSTALL` is reserved for automatic SDK delivery. `Adback.track(.install)` is
+ignored so the app cannot send a duplicate install event.
+
 SDK event payloads use `schema_version: 1` and snake_case wire fields.
 React Native and Flutter wrappers add wrapper name/version metadata to the SDK
 context so backend debugging can distinguish wrapped SDK traffic.
@@ -78,7 +81,7 @@ backend webhook/API events.
 
 ## Debugging
 
-Debug mode may log event IDs, install IDs, Adback IDs, rejection codes, and
-`match_trace_id`. It must not log SDK keys, ASA tokens, raw user match data,
-StoreKit payloads, provider credentials, or backend-only
+Debug mode emits redacted diagnostics only. It may include safe categories such
+as HTTP status or decoding failure, but it must not log SDK keys, ASA tokens,
+raw user match data, StoreKit payloads, provider credentials, or backend-only
 `install_match_signature`.

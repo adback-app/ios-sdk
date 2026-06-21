@@ -4,6 +4,16 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.9 - 2026-06-21
+
+### Reliability
+
+- Improved SDK safety during configuration, reset, Apple Ads attribution, and manual event delivery.
+
+### Documentation
+
+- Simplified the public integration guide.
+
 ## 0.1.8 - 2026-06-11
 
 ### Added

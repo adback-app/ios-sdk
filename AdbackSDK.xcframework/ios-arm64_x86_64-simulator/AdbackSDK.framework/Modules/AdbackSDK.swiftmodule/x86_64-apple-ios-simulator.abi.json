@@ -13,6 +13,13 @@
       },
       {
         "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
+        "kind": "Import",
         "name": "AdServices",
         "printedName": "AdServices",
         "declKind": "Import",
@@ -9709,497 +9716,518 @@
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 923,
       "length": 24,
       "value": "\"https:\/\/api.adback.app\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 928,
+      "offset": 969,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 1001,
+      "offset": 1042,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 2187,
+      "offset": 2228,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3137,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 3011,
+      "offset": 3182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 3084,
+      "offset": 3255,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 3150,
+      "offset": 3321,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 6196,
+      "offset": 6412,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19875,
+      "offset": 22893,
       "length": 7,
-      "value": "\"0.1.8\""
+      "value": "\"0.1.9\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21160,
+      "offset": 23508,
+      "length": 16,
+      "value": "\"app.adback.sdk\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
+      "kind": "StringLiteral",
+      "offset": 23536,
+      "length": 5,
+      "value": "\"sdk\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
+      "kind": "StringLiteral",
+      "offset": 25014,
       "length": 10,
       "value": "\"bundleId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21192,
+      "offset": 25046,
       "length": 11,
       "value": "\"installId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 26893,
+      "offset": 30784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 27381,
+      "offset": 31272,
       "length": 11,
       "value": "\"asa_token\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 27412,
+      "offset": 31303,
       "length": 9,
       "value": "\"clickId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 27441,
+      "offset": 31332,
       "length": 9,
       "value": "\"eventId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 27901,
+      "offset": 31792,
       "length": 10,
       "value": "\"adbackId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 27993,
+      "offset": 31884,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28925,
+      "offset": 32816,
       "length": 9,
       "value": "\"INSTALL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28950,
+      "offset": 32841,
       "length": 7,
       "value": "\"LOGIN\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28974,
+      "offset": 32865,
       "length": 9,
       "value": "\"SIGN_UP\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29003,
+      "offset": 32894,
       "length": 13,
       "value": "\"ADD_TO_CART\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29040,
+      "offset": 32931,
       "length": 17,
       "value": "\"ADD_TO_WISHLIST\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29084,
+      "offset": 32975,
       "length": 19,
       "value": "\"INITIATE_CHECKOUT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29124,
+      "offset": 33015,
       "length": 13,
       "value": "\"START_TRIAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29158,
+      "offset": 33049,
       "length": 13,
       "value": "\"LEVEL_START\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29195,
+      "offset": 33086,
       "length": 16,
       "value": "\"LEVEL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29238,
+      "offset": 33129,
       "length": 19,
       "value": "\"TUTORIAL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29274,
+      "offset": 33165,
       "length": 8,
       "value": "\"SEARCH\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29301,
+      "offset": 33192,
       "length": 11,
       "value": "\"VIEW_ITEM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29334,
+      "offset": 33225,
       "length": 14,
       "value": "\"VIEW_CONTENT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29364,
+      "offset": 33255,
       "length": 7,
       "value": "\"SHARE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29604,
+      "offset": 33495,
       "length": 10,
       "value": "\"STANDARD\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29631,
+      "offset": 33522,
       "length": 8,
       "value": "\"CUSTOM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29722,
+      "offset": 33613,
       "length": 11,
       "value": "\"AUTOMATIC\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29750,
+      "offset": 33641,
       "length": 8,
       "value": "\"MANUAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 31135,
+      "offset": 35026,
       "length": 12,
       "value": "\"adback-ios\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 31464,
+      "offset": 35355,
       "length": 14,
       "value": "\"wrapper_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 31505,
+      "offset": 35396,
       "length": 17,
       "value": "\"wrapper_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 31925,
+      "offset": 35816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33099,
+      "offset": 36990,
       "length": 11,
       "value": "\"app_build\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33133,
+      "offset": 37024,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33167,
+      "offset": 37058,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33202,
+      "offset": 37093,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33250,
+      "offset": 37141,
       "length": 10,
       "value": "\"is_debug\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33295,
+      "offset": 37186,
       "length": 9,
       "value": "\"os_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33326,
+      "offset": 37217,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 33586,
+      "offset": 37477,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33867,
+      "offset": 37758,
       "length": 27,
       "value": "\"ad_services_token_present\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33917,
+      "offset": 37808,
       "length": 13,
       "value": "\"deeplink_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33955,
+      "offset": 37846,
       "length": 16,
       "value": "\"match_trace_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34657,
+      "offset": 38548,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34710,
+      "offset": 38601,
       "length": 13,
       "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34745,
+      "offset": 38636,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34778,
+      "offset": 38669,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 36412,
+      "offset": 40303,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 37510,
+      "offset": 41401,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39369,
+      "offset": 43260,
       "length": 11,
       "value": "\"adback_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39398,
+      "offset": 43289,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39457,
+      "offset": 43348,
       "length": 21,
       "value": "\"client_timestamp_ms\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39522,
+      "offset": 43413,
       "length": 18,
       "value": "\"customer_user_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39581,
+      "offset": 43472,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39613,
+      "offset": 43504,
       "length": 12,
       "value": "\"event_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39647,
+      "offset": 43538,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39681,
+      "offset": 43572,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39757,
+      "offset": 43648,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39810,
+      "offset": 43701,
       "length": 14,
       "value": "\"trigger_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39850,
+      "offset": 43741,
       "length": 17,
       "value": "\"user_match_data\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 40324,
+      "offset": 44215,
       "length": 332,
       "value": "[\"ad_services_token\", \"ad_services_token_present\", \"adback_id\", \"appstack_id\", \"asa_token\", \"customer_user_id\", \"date_of_birth\", \"dob\", \"email\", \"external_id\", \"first_name\", \"idfa\", \"idfv\", \"install_id\", \"last_name\", \"phone\", \"phone_number\", \"transaction\", \"transaction_details\", \"user_id\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 40941,
+      "offset": 44832,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 40993,
+      "offset": 44884,
       "length": 13,
       "value": "\"sdk_enabled\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 41040,
+      "offset": 44931,
       "length": 26,
       "value": "\"use_install_detection_v2\""
     }

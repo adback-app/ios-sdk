@@ -5,6 +5,7 @@
 import AdServices
 import Darwin
 import Foundation
+import OSLog
 import Swift
 import UIKit
 import WebKit
