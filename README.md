@@ -38,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.9` or the latest available release.
+3. Select version `0.1.10` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -83,10 +83,13 @@ clears local configuration and stays disabled until a valid key is configured.
 ```swift
 Adback.track(.signUp)
 Adback.track(.startTrial, properties: ["plan": .string("annual")])
+Adback.track("paywall_viewed", properties: ["surface": .string("onboarding")])
 ```
 
 `INSTALL` is sent automatically during configuration. Do not send it with
 `Adback.track`; duplicate manual install calls are ignored.
+Manual events are queued locally and retried by `flush`, future `track` calls,
+and the next successful configuration.
 
 Use `flush` in debug flows or tests when you need to wait for pending delivery:
 
@@ -148,6 +151,11 @@ clipboard contents, or installed-app lists.
 IDFV may be collected only as an optional app/environment-gated install, debug,
 or match signal. User match data is sent only when your app passes it
 explicitly.
+
+The package includes `PrivacyInfo.xcprivacy` declarations for SDK install/user
+identifiers, event interaction data, optional Apple Ads/IDFV signals, and
+optional user match fields. Review Xcode's merged privacy report and your App
+Store Connect privacy answers for the Adback features your app enables.
 
 ## Signing
 

@@ -4,6 +4,22 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.1.10 - 2026-06-22
+
+### Added
+
+- Added custom event tracking and manual event delivery controls.
+
+### Changed
+
+- Events sent before SDK initialization now wait until the SDK is ready.
+- Attribution results now return without waiting for event delivery.
+- Updated SDK privacy declarations and integration guidance.
+
+### Reliability
+
+- Improved remote configuration compatibility and event retry behavior.
+
 ## 0.1.9 - 2026-06-21
 
 ### Reliability

@@ -15,5 +15,5 @@ MVP commitments:
 - SDK purchase/subscription revenue, StoreKit capture, transactions, and
   `transaction_details` are out of MVP.
 
-`PrivacyInfo.xcprivacy` is currently a release placeholder and must be finalized
-against the exact binary behavior before publishing.
+`PrivacyInfo.xcprivacy` declares the SDK's app-local `UserDefaults` state under
+Apple's `NSPrivacyAccessedAPICategoryUserDefaults` required-reason API category.

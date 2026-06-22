@@ -65,6 +65,7 @@ public enum Adback {
   public static func getAdbackId() -> Swift.String?
   public static func getAttributionParams() async -> [Swift.String : Swift.String]?
   public static func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  public static func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   public static func flush() async
   public static func enableAppleAdsAttribution()
 }
@@ -84,6 +85,7 @@ public enum Adback {
   final public func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
   final public func reset()
   final public func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  final public func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   final public func flush() async
   final public func enableAppleAdsAttribution()
   @objc deinit
@@ -191,11 +193,13 @@ public struct AdbackUserMatchData : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AdbackUser : Swift.Equatable {
+public struct AdbackUser : Swift.Codable, Swift.Equatable {
   public var customerUserID: Swift.String?
   public var matchData: AdbackSDK.AdbackUserMatchData
   public init(customerUserID: Swift.String? = nil, matchData: AdbackSDK.AdbackUserMatchData = .init())
   public static func == (a: AdbackSDK.AdbackUser, b: AdbackSDK.AdbackUser) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum AdbackEventValidationError : Swift.Error, Swift.Equatable {
   case identityFieldInProperties(Swift.String)
@@ -232,9 +236,10 @@ public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
   public let sdkEnabled: Swift.Bool
   public let useInstallDetectionV2: Swift.Bool
   public let values: [Swift.String]
-  public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(appID: Swift.String, lockWindows: [Swift.String : Swift.String] = [:], sdkEnabled: Swift.Bool, useInstallDetectionV2: Swift.Bool, values: [Swift.String] = [])
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
 }
 extension AdbackSDK.AdbackEnvironment : Swift.Hashable {}
 extension AdbackSDK.AdbackEnvironment : Swift.RawRepresentable {}
