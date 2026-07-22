@@ -38,7 +38,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.1.10` or the latest available release.
+3. Select version `0.2.0` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -115,6 +115,21 @@ if let attributes = await Adback.getAttributionParams() {
 flight. `Adback.getAdbackId()` returns the resolved Adback join ID once
 available.
 
+Apple Ads token resolution finishes asynchronously. Subscribe to changed
+best-known values, or request an explicit serialized status refresh:
+
+```swift
+Adback.setAttributionUpdateHandler { attributes in
+  Purchases.shared.setAttributes(attributes)
+}
+
+let latest = await Adback.refreshAttribution()
+```
+
+The SDK also performs a bounded background refresh after a queued Apple Ads
+token submission. Status refreshes never resend the raw AdServices token. The
+handler runs on SDK asynchronous work; move UI work to `MainActor`.
+
 The base attribute keys are `adback_id`, `adback_match_confidence`, and
 `adback_source`. Paid-click matches may also include campaign, ad group, ad,
 creative, keyword, click, landing, deeplink, and network keys. Missing values
@@ -151,6 +166,14 @@ clipboard contents, or installed-app lists.
 IDFV may be collected only as an optional app/environment-gated install, debug,
 or match signal. User match data is sent only when your app passes it
 explicitly.
+
+Pending events are stored as individually encrypted records. Raw email, phone,
+name, date-of-birth, external-ID, and customer-user-ID values are retained for
+at most 24 hours; after that they are redacted while non-identity delivery data
+may remain for at most seven days. Delivered records are deleted immediately.
+The encrypted queue is capped at 100 records and 1 MiB, dropping oldest first.
+Temporary Keychain unavailability preserves encrypted records for a later retry;
+only malformed or authentication-failed ciphertext is discarded.
 
 The package includes `PrivacyInfo.xcprivacy` declarations for SDK install/user
 identifiers, event interaction data, optional Apple Ads/IDFV signals, and

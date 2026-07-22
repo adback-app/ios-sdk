@@ -4,6 +4,21 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.2.0 - 2026-07-22
+
+### Added
+
+- Added `refreshAttribution()` and attribution update handlers.
+
+### Changed
+
+- Improved Swift module compatibility for supported Xcode versions.
+
+### Reliability
+
+- Improved event delivery across restarts and connectivity changes.
+- Added bounded retention and local protection for pending events.
+
 ## 0.1.10 - 2026-06-22
 
 ### Added

@@ -1,11 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -module-name AdbackSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -module-name AdbackSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AdServices
+import CryptoKit
 import Darwin
 import Foundation
 import OSLog
+import Security
 import Swift
 import UIKit
 import WebKit
@@ -57,6 +59,7 @@ public struct AdbackConfiguration : Swift.Equatable {
   public let options: AdbackSDK.AdbackOptions
   public static func == (a: AdbackSDK.AdbackConfiguration, b: AdbackSDK.AdbackConfiguration) -> Swift.Bool
 }
+public typealias AdbackAttributionUpdateHandler = ([Swift.String : Swift.String]) -> Swift.Void
 public enum Adback {
   public static func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
   public static func reset()
@@ -64,31 +67,12 @@ public enum Adback {
   public static func currentConfiguration() -> AdbackSDK.AdbackConfiguration?
   public static func getAdbackId() -> Swift.String?
   public static func getAttributionParams() async -> [Swift.String : Swift.String]?
+  public static func refreshAttribution() async -> [Swift.String : Swift.String]?
+  public static func setAttributionUpdateHandler(_ handler: AdbackSDK.AdbackAttributionUpdateHandler?)
   public static func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   public static func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   public static func flush() async
   public static func enableAppleAdsAttribution()
-}
-@_hasMissingDesignatedInitializers final public class AdbackClient {
-  convenience public init()
-  final public var isConfigured: Swift.Bool {
-    get
-  }
-  final public var configuration: AdbackSDK.AdbackConfiguration? {
-    get
-  }
-  final public var remoteConfig: AdbackSDK.AdbackRemoteConfig? {
-    get
-  }
-  final public func getAdbackId() -> Swift.String?
-  final public func getAttributionParams() async -> [Swift.String : Swift.String]?
-  final public func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
-  final public func reset()
-  final public func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
-  final public func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
-  final public func flush() async
-  final public func enableAppleAdsAttribution()
-  @objc deinit
 }
 public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Equatable {
   case install
@@ -240,6 +224,29 @@ public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class AdbackClient {
+  convenience public init()
+  final public var isConfigured: Swift.Bool {
+    get
+  }
+  final public var configuration: AdbackSDK.AdbackConfiguration? {
+    get
+  }
+  final public var remoteConfig: AdbackSDK.AdbackRemoteConfig? {
+    get
+  }
+  final public func getAdbackId() -> Swift.String?
+  final public func getAttributionParams() async -> [Swift.String : Swift.String]?
+  final public func setAttributionUpdateHandler(_ handler: AdbackSDK.AdbackAttributionUpdateHandler?)
+  final public func refreshAttribution() async -> [Swift.String : Swift.String]?
+  final public func configure(apiKey: Swift.String, options: AdbackSDK.AdbackOptions = .init())
+  final public func reset()
+  final public func track(_ eventName: AdbackSDK.AdbackStandardEvent, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  final public func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
+  final public func flush() async
+  final public func enableAppleAdsAttribution()
+  @objc deinit
 }
 extension AdbackSDK.AdbackEnvironment : Swift.Hashable {}
 extension AdbackSDK.AdbackEnvironment : Swift.RawRepresentable {}

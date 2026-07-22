@@ -1,7 +1,5 @@
 # Adback iOS SDK Privacy Notes
 
-This public-wrapper privacy content must be reviewed before release.
-
 MVP commitments:
 
 - No IDFA collection by default.

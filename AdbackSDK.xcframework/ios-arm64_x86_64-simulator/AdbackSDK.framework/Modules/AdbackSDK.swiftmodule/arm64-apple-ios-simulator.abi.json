@@ -1946,6 +1946,111 @@
           },
           {
             "kind": "Function",
+            "name": "refreshAttribution",
+            "printedName": "refreshAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A0O18refreshAttributionSDyS2SGSgyYaFZ",
+            "mangledName": "$s9AdbackSDK0A0O18refreshAttributionSDyS2SGSgyYaFZ",
+            "moduleName": "AdbackSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAttributionUpdateHandler",
+            "printedName": "setAttributionUpdateHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Swift.String]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Swift.String]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A0O27setAttributionUpdateHandleryyySDyS2SGcSgFZ",
+            "mangledName": "$s9AdbackSDK0A0O27setAttributionUpdateHandleryyySDyS2SGcSgFZ",
+            "moduleName": "AdbackSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "track",
             "printedName": "track(_:properties:user:)",
             "children": [
@@ -2104,505 +2209,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AdbackClient",
-        "printedName": "AdbackClient",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackClient",
-                "printedName": "AdbackSDK.AdbackClient",
-                "usr": "s:9AdbackSDK0A6ClientC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:9AdbackSDK0A6ClientCACycfc",
-            "mangledName": "$s9AdbackSDK0A6ClientCACycfc",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Var",
-            "name": "isConfigured",
-            "printedName": "isConfigured",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A6ClientC12isConfiguredSbvp",
-            "mangledName": "$s9AdbackSDK0A6ClientC12isConfiguredSbvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A6ClientC12isConfiguredSbvg",
-                "mangledName": "$s9AdbackSDK0A6ClientC12isConfiguredSbvg",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "configuration",
-            "printedName": "configuration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdbackSDK.AdbackConfiguration?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackConfiguration",
-                    "printedName": "AdbackSDK.AdbackConfiguration",
-                    "usr": "s:9AdbackSDK0A13ConfigurationV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvp",
-            "mangledName": "$s9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AdbackSDK.AdbackConfiguration?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdbackConfiguration",
-                        "printedName": "AdbackSDK.AdbackConfiguration",
-                        "usr": "s:9AdbackSDK0A13ConfigurationV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvg",
-                "mangledName": "$s9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvg",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "remoteConfig",
-            "printedName": "remoteConfig",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdbackSDK.AdbackRemoteConfig?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackRemoteConfig",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig",
-                    "usr": "s:9AdbackSDK0A12RemoteConfigV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvp",
-            "mangledName": "$s9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvp",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AdbackSDK.AdbackRemoteConfig?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdbackRemoteConfig",
-                        "printedName": "AdbackSDK.AdbackRemoteConfig",
-                        "usr": "s:9AdbackSDK0A12RemoteConfigV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvg",
-                "mangledName": "$s9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvg",
-                "moduleName": "AdbackSDK",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getAdbackId",
-            "printedName": "getAdbackId()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC03getA2IdSSSgyF",
-            "mangledName": "$s9AdbackSDK0A6ClientC03getA2IdSSSgyF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getAttributionParams",
-            "printedName": "getAttributionParams()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC20getAttributionParamsSDyS2SGSgyYaF",
-            "mangledName": "$s9AdbackSDK0A6ClientC20getAttributionParamsSDyS2SGSgyYaF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(apiKey:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackOptions",
-                "printedName": "AdbackSDK.AdbackOptions",
-                "hasDefaultArg": true,
-                "usr": "s:9AdbackSDK0A7OptionsV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC9configure6apiKey7optionsySS_AA0A7OptionsVtF",
-            "mangledName": "$s9AdbackSDK0A6ClientC9configure6apiKey7optionsySS_AA0A7OptionsVtF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC5resetyyF",
-            "mangledName": "$s9AdbackSDK0A6ClientC5resetyyF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "track",
-            "printedName": "track(_:properties:user:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackStandardEvent",
-                "printedName": "AdbackSDK.AdbackStandardEvent",
-                "usr": "s:9AdbackSDK0A13StandardEventO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : AdbackSDK.AdbackPropertyValue]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackPropertyValue",
-                    "printedName": "AdbackSDK.AdbackPropertyValue",
-                    "usr": "s:9AdbackSDK0A13PropertyValueO"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackUser",
-                "printedName": "AdbackSDK.AdbackUser",
-                "hasDefaultArg": true,
-                "usr": "s:9AdbackSDK0A4UserV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC5track_10properties4useryAA0A13StandardEventO_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
-            "mangledName": "$s9AdbackSDK0A6ClientC5track_10properties4useryAA0A13StandardEventO_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "track",
-            "printedName": "track(_:properties:user:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : AdbackSDK.AdbackPropertyValue]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdbackPropertyValue",
-                    "printedName": "AdbackSDK.AdbackPropertyValue",
-                    "usr": "s:9AdbackSDK0A13PropertyValueO"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdbackUser",
-                "printedName": "AdbackSDK.AdbackUser",
-                "hasDefaultArg": true,
-                "usr": "s:9AdbackSDK0A4UserV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC5track_10properties4userySS_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
-            "mangledName": "$s9AdbackSDK0A6ClientC5track_10properties4userySS_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "flush",
-            "printedName": "flush()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC5flushyyYaF",
-            "mangledName": "$s9AdbackSDK0A6ClientC5flushyyYaF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableAppleAdsAttribution",
-            "printedName": "enableAppleAdsAttribution()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9AdbackSDK0A6ClientC25enableAppleAdsAttributionyyF",
-            "mangledName": "$s9AdbackSDK0A6ClientC25enableAppleAdsAttributionyyF",
-            "moduleName": "AdbackSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:9AdbackSDK0A6ClientC",
-        "mangledName": "$s9AdbackSDK0A6ClientC",
-        "moduleName": "AdbackSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -9860,6 +9466,638 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdbackClient",
+        "printedName": "AdbackClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdbackClient",
+                "printedName": "AdbackSDK.AdbackClient",
+                "usr": "s:9AdbackSDK0A6ClientC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AdbackSDK0A6ClientCACycfc",
+            "mangledName": "$s9AdbackSDK0A6ClientCACycfc",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "isConfigured",
+            "printedName": "isConfigured",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AdbackSDK0A6ClientC12isConfiguredSbvp",
+            "mangledName": "$s9AdbackSDK0A6ClientC12isConfiguredSbvp",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AdbackSDK0A6ClientC12isConfiguredSbvg",
+                "mangledName": "$s9AdbackSDK0A6ClientC12isConfiguredSbvg",
+                "moduleName": "AdbackSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdbackSDK.AdbackConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackConfiguration",
+                    "printedName": "AdbackSDK.AdbackConfiguration",
+                    "usr": "s:9AdbackSDK0A13ConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvp",
+            "mangledName": "$s9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvp",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdbackSDK.AdbackConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackConfiguration",
+                        "printedName": "AdbackSDK.AdbackConfiguration",
+                        "usr": "s:9AdbackSDK0A13ConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvg",
+                "mangledName": "$s9AdbackSDK0A6ClientC13configurationAA0A13ConfigurationVSgvg",
+                "moduleName": "AdbackSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remoteConfig",
+            "printedName": "remoteConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdbackSDK.AdbackRemoteConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackRemoteConfig",
+                    "printedName": "AdbackSDK.AdbackRemoteConfig",
+                    "usr": "s:9AdbackSDK0A12RemoteConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvp",
+            "mangledName": "$s9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvp",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AdbackSDK.AdbackRemoteConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackRemoteConfig",
+                        "printedName": "AdbackSDK.AdbackRemoteConfig",
+                        "usr": "s:9AdbackSDK0A12RemoteConfigV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvg",
+                "mangledName": "$s9AdbackSDK0A6ClientC12remoteConfigAA0a6RemoteE0VSgvg",
+                "moduleName": "AdbackSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getAdbackId",
+            "printedName": "getAdbackId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC03getA2IdSSSgyF",
+            "mangledName": "$s9AdbackSDK0A6ClientC03getA2IdSSSgyF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAttributionParams",
+            "printedName": "getAttributionParams()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC20getAttributionParamsSDyS2SGSgyYaF",
+            "mangledName": "$s9AdbackSDK0A6ClientC20getAttributionParamsSDyS2SGSgyYaF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAttributionUpdateHandler",
+            "printedName": "setAttributionUpdateHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Swift.String]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Swift.String]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC27setAttributionUpdateHandleryyySDyS2SGcSgF",
+            "mangledName": "$s9AdbackSDK0A6ClientC27setAttributionUpdateHandleryyySDyS2SGcSgF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshAttribution",
+            "printedName": "refreshAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC18refreshAttributionSDyS2SGSgyYaF",
+            "mangledName": "$s9AdbackSDK0A6ClientC18refreshAttributionSDyS2SGSgyYaF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdbackOptions",
+                "printedName": "AdbackSDK.AdbackOptions",
+                "hasDefaultArg": true,
+                "usr": "s:9AdbackSDK0A7OptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC9configure6apiKey7optionsySS_AA0A7OptionsVtF",
+            "mangledName": "$s9AdbackSDK0A6ClientC9configure6apiKey7optionsySS_AA0A7OptionsVtF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC5resetyyF",
+            "mangledName": "$s9AdbackSDK0A6ClientC5resetyyF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:properties:user:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdbackStandardEvent",
+                "printedName": "AdbackSDK.AdbackStandardEvent",
+                "usr": "s:9AdbackSDK0A13StandardEventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : AdbackSDK.AdbackPropertyValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackPropertyValue",
+                    "printedName": "AdbackSDK.AdbackPropertyValue",
+                    "usr": "s:9AdbackSDK0A13PropertyValueO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdbackUser",
+                "printedName": "AdbackSDK.AdbackUser",
+                "hasDefaultArg": true,
+                "usr": "s:9AdbackSDK0A4UserV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC5track_10properties4useryAA0A13StandardEventO_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
+            "mangledName": "$s9AdbackSDK0A6ClientC5track_10properties4useryAA0A13StandardEventO_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:properties:user:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : AdbackSDK.AdbackPropertyValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackPropertyValue",
+                    "printedName": "AdbackSDK.AdbackPropertyValue",
+                    "usr": "s:9AdbackSDK0A13PropertyValueO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdbackUser",
+                "printedName": "AdbackSDK.AdbackUser",
+                "hasDefaultArg": true,
+                "usr": "s:9AdbackSDK0A4UserV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC5track_10properties4userySS_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
+            "mangledName": "$s9AdbackSDK0A6ClientC5track_10properties4userySS_SDySSAA0A13PropertyValueOGAA0A4UserVtF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC5flushyyYaF",
+            "mangledName": "$s9AdbackSDK0A6ClientC5flushyyYaF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableAppleAdsAttribution",
+            "printedName": "enableAppleAdsAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AdbackSDK0A6ClientC25enableAppleAdsAttributionyyF",
+            "mangledName": "$s9AdbackSDK0A6ClientC25enableAppleAdsAttributionyyF",
+            "moduleName": "AdbackSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AdbackSDK0A6ClientC",
+        "mangledName": "$s9AdbackSDK0A6ClientC",
+        "moduleName": "AdbackSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "AdbackSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "URLSession",
         "printedName": "URLSession",
@@ -9991,562 +10229,737 @@
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 3209,
+      "offset": 3498,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 3421,
+      "offset": 3710,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 3833,
-      "length": 35,
-      "value": "\"app.adback.sdk.manual_event_queue\""
+      "offset": 4009,
+      "length": 7,
+      "value": "\"0.2.0\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 3920,
-      "length": 36,
-      "value": "\"app.adback.sdk.tracked_event_queue\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4582,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4627,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "Array",
-      "offset": 4700,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "Array",
-      "offset": 4766,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "Dictionary",
-      "offset": 8559,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "Dictionary",
-      "offset": 8841,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 36948,
-      "length": 8,
-      "value": "\"0.1.10\""
-    },
-    {
-      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
-      "kind": "StringLiteral",
-      "offset": 37685,
+      "offset": 4745,
       "length": 16,
       "value": "\"app.adback.sdk\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 37713,
+      "offset": 4773,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 39976,
+      "offset": 7012,
       "length": 10,
       "value": "\"bundleId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 40008,
+      "offset": 7044,
       "length": 11,
       "value": "\"installId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 45746,
+      "offset": 12774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 46234,
+      "offset": 13262,
       "length": 11,
       "value": "\"asa_token\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 46265,
+      "offset": 13293,
       "length": 9,
       "value": "\"clickId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 46294,
+      "offset": 13322,
       "length": 9,
       "value": "\"eventId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 46754,
+      "offset": 13774,
       "length": 10,
       "value": "\"adbackId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 46846,
+      "offset": 13866,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 47669,
+      "offset": 14689,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 47889,
+      "offset": 14909,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48292,
+      "offset": 15312,
       "length": 9,
       "value": "\"INSTALL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48317,
+      "offset": 15337,
       "length": 7,
       "value": "\"LOGIN\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48341,
+      "offset": 15361,
       "length": 9,
       "value": "\"SIGN_UP\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48370,
+      "offset": 15390,
       "length": 13,
       "value": "\"ADD_TO_CART\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48407,
+      "offset": 15427,
       "length": 17,
       "value": "\"ADD_TO_WISHLIST\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48451,
+      "offset": 15471,
       "length": 19,
       "value": "\"INITIATE_CHECKOUT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48491,
+      "offset": 15511,
       "length": 13,
       "value": "\"START_TRIAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48525,
+      "offset": 15545,
       "length": 13,
       "value": "\"LEVEL_START\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48562,
+      "offset": 15582,
       "length": 16,
       "value": "\"LEVEL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48605,
+      "offset": 15625,
       "length": 19,
       "value": "\"TUTORIAL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48641,
+      "offset": 15661,
       "length": 8,
       "value": "\"SEARCH\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48668,
+      "offset": 15688,
       "length": 11,
       "value": "\"VIEW_ITEM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48701,
+      "offset": 15721,
       "length": 14,
       "value": "\"VIEW_CONTENT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 48731,
+      "offset": 15751,
       "length": 7,
       "value": "\"SHARE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 48998,
+      "offset": 16018,
       "length": 10,
       "value": "[\"CUSTOM\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 49087,
+      "offset": 16107,
       "length": 10,
       "value": "\"STANDARD\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 49114,
+      "offset": 16134,
       "length": 8,
       "value": "\"CUSTOM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 49205,
+      "offset": 16225,
       "length": 11,
       "value": "\"AUTOMATIC\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 49233,
+      "offset": 16253,
       "length": 8,
       "value": "\"MANUAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 50618,
+      "offset": 17638,
       "length": 12,
       "value": "\"adback-ios\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 50947,
+      "offset": 17967,
       "length": 14,
       "value": "\"wrapper_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 50988,
+      "offset": 18008,
       "length": 17,
       "value": "\"wrapper_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 51408,
+      "offset": 18428,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52582,
+      "offset": 19602,
       "length": 11,
       "value": "\"app_build\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52616,
+      "offset": 19636,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52650,
+      "offset": 19670,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52685,
+      "offset": 19705,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52733,
+      "offset": 19753,
       "length": 10,
       "value": "\"is_debug\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52778,
+      "offset": 19798,
       "length": 9,
       "value": "\"os_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 52809,
+      "offset": 19829,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 53069,
+      "offset": 20089,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 53350,
+      "offset": 20370,
       "length": 27,
       "value": "\"ad_services_token_present\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 53400,
+      "offset": 20420,
       "length": 13,
       "value": "\"deeplink_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 53438,
+      "offset": 20458,
       "length": 16,
       "value": "\"match_trace_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 54140,
+      "offset": 21160,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 54193,
+      "offset": 21213,
       "length": 13,
       "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 54228,
+      "offset": 21248,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 54261,
+      "offset": 21281,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 55904,
+      "offset": 23196,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 57002,
+      "offset": 24294,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 58901,
+      "offset": 26193,
       "length": 11,
       "value": "\"adback_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 58930,
+      "offset": 26222,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 58989,
+      "offset": 26281,
       "length": 21,
       "value": "\"client_timestamp_ms\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59054,
+      "offset": 26346,
       "length": 18,
       "value": "\"customer_user_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59113,
+      "offset": 26405,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59145,
+      "offset": 26437,
       "length": 12,
       "value": "\"event_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59179,
+      "offset": 26471,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59213,
+      "offset": 26505,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59289,
+      "offset": 26581,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59342,
+      "offset": 26634,
       "length": 14,
       "value": "\"trigger_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 59382,
+      "offset": 26674,
       "length": 17,
       "value": "\"user_match_data\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 59856,
+      "offset": 28177,
       "length": 332,
       "value": "[\"ad_services_token\", \"ad_services_token_present\", \"adback_id\", \"appstack_id\", \"asa_token\", \"customer_user_id\", \"date_of_birth\", \"dob\", \"email\", \"external_id\", \"first_name\", \"idfa\", \"idfv\", \"install_id\", \"last_name\", \"phone\", \"phone_number\", \"transaction\", \"transaction_details\", \"user_id\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 60487,
+      "offset": 28808,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 60570,
+      "offset": 28891,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 60811,
+      "offset": 29132,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 60863,
+      "offset": 29184,
       "length": 13,
       "value": "\"sdk_enabled\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 60910,
+      "offset": 29231,
       "length": 26,
       "value": "\"use_install_detection_v2\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "StringLiteral",
+      "offset": 476,
+      "length": 32,
+      "value": "\"app.adback.sdk.first_opened_at\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "StringLiteral",
+      "offset": 552,
+      "length": 27,
+      "value": "\"app.adback.sdk.install_id\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1206,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "Array",
+      "offset": 1277,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "Array",
+      "offset": 1341,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1815,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1848,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "Array",
+      "offset": 2676,
+      "length": 14,
+      "value": "[2, 5, 10, 20]"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2808,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "Dictionary",
+      "offset": 8221,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "Dictionary",
+      "offset": 8503,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 495,
+      "length": 18,
+      "value": "\"capacity_dropped\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 17,
+      "value": "\"corrupt_dropped\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 582,
+      "length": 19,
+      "value": "\"encryption_failed\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 626,
+      "length": 17,
+      "value": "\"expired_dropped\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 19,
+      "value": "\"identity_redacted\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 17,
+      "value": "\"legacy_migrated\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 950,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 1105,
+      "length": 38,
+      "value": "\"app.adback.sdk.encrypted-event-queue\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 1167,
+      "length": 14,
+      "value": "\"queue-key-v1\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 7125,
+      "length": 41,
+      "value": "\"app.adback.sdk.encrypted_queue.index.v1\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 7205,
+      "length": 35,
+      "value": "\"app.adback.sdk.manual_event_queue\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 7280,
+      "length": 36,
+      "value": "\"app.adback.sdk.tracked_event_queue\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 7352,
+      "length": 43,
+      "value": "\"app.adback.sdk.encrypted_queue.record.v1.\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7424,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7465,
+      "length": 9,
+      "value": "1048576"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7522,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7527,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7532,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7579,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7583,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7588,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7593,
+      "length": 2,
+      "value": "60"
     }
   ]
 }
