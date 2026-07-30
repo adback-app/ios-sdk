@@ -6,6 +6,7 @@ import AdServices
 import CryptoKit
 import Darwin
 import Foundation
+import Network
 import OSLog
 import Security
 import Swift
@@ -210,23 +211,34 @@ public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable {
   public let userMatchData: AdbackSDK.AdbackUserMatchData
   public init(eventID: Foundation.UUID = UUID(), eventName: AdbackSDK.AdbackStandardEvent, triggerType: AdbackSDK.AdbackTriggerType, installID: Swift.String?, adbackID: Swift.String? = nil, user: AdbackSDK.AdbackUser = .init(), appID: Swift.String, environment: AdbackSDK.AdbackEnvironment, platform: AdbackSDK.AdbackPlatform = .ios, sdk: AdbackSDK.AdbackSDKContext, context: AdbackSDK.AdbackEventContext = .init(), attribution: AdbackSDK.AdbackAttributionContext = .init(), properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], clientDate: Foundation.Date = Date()) throws
   public static func custom(eventID: Foundation.UUID = UUID(), name: Swift.String, installID: Swift.String?, adbackID: Swift.String? = nil, user: AdbackSDK.AdbackUser = .init(), appID: Swift.String, environment: AdbackSDK.AdbackEnvironment, platform: AdbackSDK.AdbackPlatform = .ios, sdk: AdbackSDK.AdbackSDKContext, context: AdbackSDK.AdbackEventContext = .init(), attribution: AdbackSDK.AdbackAttributionContext = .init(), properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], clientDate: Foundation.Date = Date()) throws -> AdbackSDK.AdbackEventEnvelope
+  public init(from decoder: any Swift.Decoder) throws
   public static func == (a: AdbackSDK.AdbackEventEnvelope, b: AdbackSDK.AdbackEventEnvelope) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
+  public struct AttributionRetry : Swift.Codable, Swift.Equatable {
+    public let enabled: Swift.Bool
+    public let foregroundMinIntervalSeconds: Swift.Int
+    public let retryDelaysSeconds: [Swift.Int]
+    public let settlementSeconds: Swift.Int
+    public static func == (a: AdbackSDK.AdbackRemoteConfig.AttributionRetry, b: AdbackSDK.AdbackRemoteConfig.AttributionRetry) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
   public let appID: Swift.String
+  public let attributionRetry: AdbackSDK.AdbackRemoteConfig.AttributionRetry?
   public let lockWindows: [Swift.String : Swift.String]
   public let sdkEnabled: Swift.Bool
   public let useInstallDetectionV2: Swift.Bool
   public let values: [Swift.String]
-  public init(appID: Swift.String, lockWindows: [Swift.String : Swift.String] = [:], sdkEnabled: Swift.Bool, useInstallDetectionV2: Swift.Bool, values: [Swift.String] = [])
+  public init(appID: Swift.String, attributionRetry: AdbackSDK.AdbackRemoteConfig.AttributionRetry? = nil, lockWindows: [Swift.String : Swift.String] = [:], sdkEnabled: Swift.Bool, useInstallDetectionV2: Swift.Bool, values: [Swift.String] = [])
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers final public class AdbackClient {
   convenience public init()
+  @objc deinit
   final public var isConfigured: Swift.Bool {
     get
   }
@@ -246,7 +258,6 @@ public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
   final public func track(_ eventName: Swift.String, properties: [Swift.String : AdbackSDK.AdbackPropertyValue] = [:], user: AdbackSDK.AdbackUser = .init())
   final public func flush() async
   final public func enableAppleAdsAttribution()
-  @objc deinit
 }
 extension AdbackSDK.AdbackEnvironment : Swift.Hashable {}
 extension AdbackSDK.AdbackEnvironment : Swift.RawRepresentable {}

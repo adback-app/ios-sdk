@@ -15,13 +15,17 @@ Adback.configure(
 )
 ```
 
-In `0.2.0`, `configure` starts SDK bootstrap in the background. It fetches the
+Since `0.2.0`, `configure` starts SDK bootstrap in the background. It fetches the
 lean remote SDK config: `app_id`, `sdk_enabled`, `use_install_detection_v2`,
-`values`, and `lockWindows`.
+`values`, `lockWindows`, and optional `attribution_retry`.
 
 After config succeeds, the SDK resolves the install with
 `POST /v1/sdk/installs/resolve`, then sends an automatic `INSTALL` SDK event
 with `POST /v1/sdk/events`.
+
+Version `0.3.0` supports optional install `resolution` responses. The SDK
+retries `unmatched_settling` results while active and after foreground events.
+It stops after `matched` or `final_unattributed`.
 
 To enable Apple Ads attribution on iOS 14.3+, call:
 
@@ -73,6 +77,12 @@ let latest = await Adback.refreshAttribution()
 After an Apple Ads token is queued, the SDK performs a bounded cancellable
 background refresh. Polls contain a token-present signal but never resend the
 raw token. Reconfigure/reset guards discard stale results.
+
+## Reset
+
+`Adback.reset()` clears SDK configuration, attribution, and queued events. It
+preserves the install identity and immutable first-open time. A later
+configuration continues the same installation.
 
 ## Event Boundary
 

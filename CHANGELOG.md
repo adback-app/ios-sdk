@@ -4,6 +4,23 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.3.0 - 2026-07-30
+
+### Added
+
+- Added durable attribution retries for delayed install results.
+- Added foreground retry resumption.
+
+### Changed
+
+- `Adback.reset()` now preserves installation identity while clearing configuration, attribution, and pending events.
+
+### Reliability
+
+- Improved retry consistency across restarts and temporary connectivity failures.
+- Improved compatibility with older backend responses.
+- Kept Apple Ads refresh independent from general attribution retries.
+
 ## 0.2.0 - 2026-07-22
 
 ### Added

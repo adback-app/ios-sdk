@@ -11,6 +11,7 @@ Adback iOS SDK binary.
 - Swift Package Manager install with a prebuilt `AdbackSDK.xcframework`
 - Networked SDK configuration for production and development apps
 - Automatic install resolve and automatic install event delivery
+- Durable install-attribution settlement retries across foreground sessions
 - Optional Apple Ads attribution handoff without requiring ATT
 - Manual standard SDK event tracking with `Adback.track(...)`
 - Safe no-crash behavior for missing or empty SDK keys
@@ -38,7 +39,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.2.0` or the latest available release.
+3. Select version `0.3.0` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -137,11 +138,14 @@ are omitted.
 
 ## Reset
 
-Reset local SDK state when signing out, switching workspaces, or running tests:
+Reset SDK configuration, attribution, and queued events when signing out:
 
 ```swift
 Adback.reset()
 ```
+
+`reset()` preserves the install identity and immutable first-open time. A later
+configuration continues the same installation.
 
 ## Revenue and Paywalls
 
