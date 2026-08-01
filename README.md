@@ -39,7 +39,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.3.0` or the latest available release.
+3. Select version `0.3.1` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -92,6 +92,29 @@ Adback.track("paywall_viewed", properties: ["surface": .string("onboarding")])
 Manual events are queued locally and retried by `flush`, future `track` calls,
 and the next successful configuration.
 
+Send login and signup identity through `AdbackUser`. Do not put identity fields
+inside `properties`:
+
+```swift
+let user = AdbackUser(
+  customerUserID: "user_123",
+  matchData: .init(
+    email: "person@example.com",
+    externalID: "account_123"
+  )
+)
+
+Adback.track(.login, properties: ["method": .string("apple")], user: user)
+Adback.track(.signUp, properties: ["plan": .string("annual")], user: user)
+```
+
+The SDK does not keep a global signed-in user. Pass `user` on each event that
+needs identity. Use a stable internal identifier for `customerUserID`.
+
+Standard events are `LOGIN`, `SIGN_UP`, `ADD_TO_CART`, `ADD_TO_WISHLIST`,
+`INITIATE_CHECKOUT`, `START_TRIAL`, `LEVEL_START`, `LEVEL_COMPLETE`,
+`TUTORIAL_COMPLETE`, `SEARCH`, `VIEW_ITEM`, `VIEW_CONTENT`, and `SHARE`.
+
 Use `flush` in debug flows or tests when you need to wait for pending delivery:
 
 ```swift
@@ -138,7 +161,8 @@ are omitted.
 
 ## Reset
 
-Reset SDK configuration, attribution, and queued events when signing out:
+Reset SDK configuration, attribution, and queued events only when disconnecting
+Adback, switching API keys, or running tests:
 
 ```swift
 Adback.reset()
@@ -147,14 +171,19 @@ Adback.reset()
 `reset()` preserves the install identity and immutable first-open time. A later
 configuration continues the same installation.
 
+Do not call `reset()` for a routine user logout. The SDK stores no global user,
+and `reset()` removes events that still wait for delivery.
+
 ## Revenue and Paywalls
 
 Use Adback attribution values with RevenueCat, Superwall, or your own paywall
 targeting. Send actual purchase and subscription revenue through RevenueCat,
 Superwall, App Store Server Notifications, or your backend integration.
 
-The mobile SDK does not expose SDK-side purchase, subscription, StoreKit capture,
-manual revenue, transaction, or `transaction_details` APIs for the MVP.
+The mobile SDK does not expose SDK-side purchase, subscription, StoreKit
+transaction capture, manual revenue, transaction, or `transaction_details`
+APIs for the MVP. It reads verified app-transaction metadata only for reinstall
+classification.
 
 ## React Native and Flutter Wrappers
 
@@ -167,9 +196,9 @@ as React Native or Flutter traffic without requiring extra app code.
 The SDK does not collect IDFA by default, precise location, contacts, photos,
 clipboard contents, or installed-app lists.
 
-IDFV may be collected only as an optional app/environment-gated install, debug,
-or match signal. User match data is sent only when your app passes it
-explicitly.
+During iOS install resolution, the SDK sends IDFV, opaque Keychain identifiers,
+verified app-transaction metadata, and app-container creation time for reinstall
+classification. User match data is sent only when your app passes it explicitly.
 
 Pending events are stored as individually encrypted records. Raw email, phone,
 name, date-of-birth, external-ID, and customer-user-ID values are retained for
@@ -180,7 +209,7 @@ Temporary Keychain unavailability preserves encrypted records for a later retry;
 only malformed or authentication-failed ciphertext is discarded.
 
 The package includes `PrivacyInfo.xcprivacy` declarations for SDK install/user
-identifiers, event interaction data, optional Apple Ads/IDFV signals, and
+identifiers, event interaction data, Apple Ads and reinstall signals, and
 optional user match fields. Review Xcode's merged privacy report and your App
 Store Connect privacy answers for the Adback features your app enables.
 

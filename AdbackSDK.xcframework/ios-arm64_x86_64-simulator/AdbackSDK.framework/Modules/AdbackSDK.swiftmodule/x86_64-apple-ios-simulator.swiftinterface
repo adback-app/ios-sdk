@@ -9,6 +9,7 @@ import Foundation
 import Network
 import OSLog
 import Security
+import StoreKit
 import Swift
 import UIKit
 import WebKit
@@ -189,6 +190,7 @@ public struct AdbackUser : Swift.Codable, Swift.Equatable {
 public enum AdbackEventValidationError : Swift.Error, Swift.Equatable {
   case identityFieldInProperties(Swift.String)
   case invalidCustomEventName(Swift.String)
+  case invalidClientDate
   public static func == (a: AdbackSDK.AdbackEventValidationError, b: AdbackSDK.AdbackEventValidationError) -> Swift.Bool
 }
 public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable {

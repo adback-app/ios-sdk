@@ -4,6 +4,18 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.3.1 - 2026-08-01
+
+### Added
+
+- Improved reinstall detection and attribution accuracy.
+- Added guidance for identity, standard events, and safe SDK reset.
+
+### Reliability
+
+- Improved pending event recovery and concurrent client behavior.
+- Fixed callback and retry handling during reset and temporary failures.
+
 ## 0.3.0 - 2026-07-30
 
 ### Added

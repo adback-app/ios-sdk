@@ -84,6 +84,9 @@ raw token. Reconfigure/reset guards discard stale results.
 preserves the install identity and immutable first-open time. A later
 configuration continues the same installation.
 
+Do not call `reset()` for a routine user logout. The SDK stores no global user,
+and `reset()` removes events that still wait for delivery.
+
 ## Event Boundary
 
 MVP SDK events are for install and funnel signals such as signup, checkout
@@ -95,6 +98,26 @@ Adback.track(.signUp)
 Adback.track(.startTrial, properties: ["plan": .string("annual")])
 Adback.track("paywall_viewed", properties: ["surface": .string("onboarding")])
 ```
+
+Send identity with the event that creates or authenticates the account:
+
+```swift
+let user = AdbackUser(
+  customerUserID: "user_123",
+  matchData: .init(email: "person@example.com", externalID: "account_123")
+)
+
+Adback.track(.login, properties: ["method": .string("apple")], user: user)
+Adback.track(.signUp, properties: ["plan": .string("annual")], user: user)
+```
+
+The SDK does not keep a global signed-in user. Pass `user` on each event that
+needs identity. Do not put identity fields inside `properties`.
+
+The standard manual events are `LOGIN`, `SIGN_UP`, `ADD_TO_CART`,
+`ADD_TO_WISHLIST`, `INITIATE_CHECKOUT`, `START_TRIAL`, `LEVEL_START`,
+`LEVEL_COMPLETE`, `TUTORIAL_COMPLETE`, `SEARCH`, `VIEW_ITEM`, `VIEW_CONTENT`,
+and `SHARE`.
 
 `INSTALL` is reserved for automatic SDK delivery. `Adback.track(.install)` is
 ignored so the app cannot send a duplicate install event.

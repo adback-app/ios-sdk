@@ -5,13 +5,20 @@ MVP commitments:
 - No IDFA collection by default.
 - No precise location, contacts, photos, clipboard contents, or installed-app
   list collection.
-- Optional IDFV collection only when enabled by app/environment config as an iOS
-  install/debug/match signal.
+- The SDK collects IDFV during iOS install resolution for install and reinstall
+  classification.
+- The SDK creates opaque device-only and synchronizable Keychain identifiers for
+  reinstall classification.
+- The SDK reads verified StoreKit app-transaction metadata and the app-container
+  creation time for reinstall classification.
+- The SDK keeps the first reinstall-signal snapshot encrypted until install
+  attribution reaches a final state. Retries reuse this snapshot.
 - User match data is sent only when the app developer passes it explicitly.
 - ASA tokens are sent only on the install resolve / Apple Ads attribution path,
   never as normal event metadata.
-- SDK purchase/subscription revenue, StoreKit capture, transactions, and
-  `transaction_details` are out of MVP.
+- SDK purchase/subscription revenue, StoreKit transaction capture, and
+  `transaction_details` remain out of MVP. App-transaction metadata does not
+  include purchase revenue or subscription transactions.
 - Optional 0.3.0 diagnostics capture only a coarse one-shot network-path
   classification (interface class plus IPv4/IPv6/constrained/expensive
   booleans) and metadata-only signal-family presence bits. No SSID, BSSID,
