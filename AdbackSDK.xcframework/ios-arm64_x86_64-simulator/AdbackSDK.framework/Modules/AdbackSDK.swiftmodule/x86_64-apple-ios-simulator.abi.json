@@ -230,13 +230,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -277,6 +270,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -420,13 +434,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -467,6 +474,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -758,13 +786,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -805,6 +826,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1605,6 +1647,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1762,6 +1818,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -2944,6 +3014,42 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
             "name": "CaseIterable",
             "printedName": "CaseIterable",
             "children": [
@@ -2974,49 +3080,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3035,6 +3098,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -3215,13 +3299,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -3262,6 +3339,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -3442,13 +3540,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
             "name": "RawRepresentable",
             "printedName": "RawRepresentable",
             "children": [
@@ -3489,6 +3580,27 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -3827,6 +3939,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4415,6 +4541,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -5787,6 +5927,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6284,6 +6438,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7189,6 +7357,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7561,6 +7743,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -7704,6 +7900,230 @@
             "declKind": "EnumElement",
             "usr": "s:9AdbackSDK0A20EventValidationErrorO17invalidClientDateyA2CmF",
             "mangledName": "$s9AdbackSDK0A20EventValidationErrorO17invalidClientDateyA2CmF",
+            "moduleName": "AdbackSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPropertyCount",
+            "printedName": "invalidPropertyCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdbackSDK.AdbackEventValidationError.Type) -> AdbackSDK.AdbackEventValidationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackEventValidationError",
+                    "printedName": "AdbackSDK.AdbackEventValidationError",
+                    "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdbackSDK.AdbackEventValidationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9AdbackSDK0A20EventValidationErrorO20invalidPropertyCountyA2CmF",
+            "mangledName": "$s9AdbackSDK0A20EventValidationErrorO20invalidPropertyCountyA2CmF",
+            "moduleName": "AdbackSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPropertyKey",
+            "printedName": "invalidPropertyKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdbackSDK.AdbackEventValidationError.Type) -> (Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdbackSDK.AdbackEventValidationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9AdbackSDK0A20EventValidationErrorO18invalidPropertyKeyyACSScACmF",
+            "mangledName": "$s9AdbackSDK0A20EventValidationErrorO18invalidPropertyKeyyACSScACmF",
+            "moduleName": "AdbackSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidPropertyValue",
+            "printedName": "invalidPropertyValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdbackSDK.AdbackEventValidationError.Type) -> (Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdbackSDK.AdbackEventValidationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9AdbackSDK0A20EventValidationErrorO20invalidPropertyValueyACSScACmF",
+            "mangledName": "$s9AdbackSDK0A20EventValidationErrorO20invalidPropertyValueyACSScACmF",
+            "moduleName": "AdbackSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "propertiesTooLarge",
+            "printedName": "propertiesTooLarge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdbackSDK.AdbackEventValidationError.Type) -> AdbackSDK.AdbackEventValidationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdbackEventValidationError",
+                    "printedName": "AdbackSDK.AdbackEventValidationError",
+                    "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdbackSDK.AdbackEventValidationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9AdbackSDK0A20EventValidationErrorO18propertiesTooLargeyA2CmF",
+            "mangledName": "$s9AdbackSDK0A20EventValidationErrorO18propertiesTooLargeyA2CmF",
+            "moduleName": "AdbackSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "valueTooLong",
+            "printedName": "valueTooLong",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdbackSDK.AdbackEventValidationError.Type) -> (Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AdbackSDK.AdbackEventValidationError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdbackSDK.AdbackEventValidationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdbackEventValidationError",
+                        "printedName": "AdbackSDK.AdbackEventValidationError",
+                        "usr": "s:9AdbackSDK0A20EventValidationErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9AdbackSDK0A20EventValidationErrorO12valueTooLongyACSScACmF",
+            "mangledName": "$s9AdbackSDK0A20EventValidationErrorO12valueTooLongyACSScACmF",
             "moduleName": "AdbackSDK"
           },
           {
@@ -9031,6 +9451,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -9362,6 +9796,20 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -9909,6 +10357,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -10527,6 +10989,20 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -10704,595 +11180,602 @@
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 972,
+      "offset": 1012,
       "length": 24,
       "value": "\"https:\/\/api.adback.app\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 1018,
+      "offset": 1058,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 1091,
+      "offset": 1131,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 4210,
+      "offset": 6331,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 4422,
+      "offset": 6543,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 4913,
+      "offset": 7034,
       "length": 7,
-      "value": "\"0.3.2\""
+      "value": "\"0.3.3\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7997,
+      "length": 9,
+      "value": "1048576"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 5649,
+      "offset": 8314,
       "length": 16,
       "value": "\"app.adback.sdk\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 5677,
+      "offset": 8342,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 8013,
+      "offset": 11232,
       "length": 10,
       "value": "\"bundleId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 8045,
+      "offset": 11264,
       "length": 11,
       "value": "\"installId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 13825,
+      "offset": 17505,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 14390,
+      "offset": 18070,
       "length": 11,
       "value": "\"asa_token\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 14421,
+      "offset": 18101,
       "length": 9,
       "value": "\"clickId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 14450,
+      "offset": 18130,
       "length": 9,
       "value": "\"eventId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15223,
+      "offset": 18903,
       "length": 20,
       "value": "\"final_unattributed\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15294,
+      "offset": 18974,
       "length": 20,
       "value": "\"unmatched_settling\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 15789,
+      "offset": 19469,
       "length": 10,
       "value": "\"adbackId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 15910,
+      "offset": 19590,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 16889,
+      "offset": 20569,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17109,
+      "offset": 20789,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17512,
+      "offset": 21209,
       "length": 9,
       "value": "\"INSTALL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17537,
+      "offset": 21234,
       "length": 7,
       "value": "\"LOGIN\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17561,
+      "offset": 21258,
       "length": 9,
       "value": "\"SIGN_UP\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17590,
+      "offset": 21287,
       "length": 13,
       "value": "\"ADD_TO_CART\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17627,
+      "offset": 21324,
       "length": 17,
       "value": "\"ADD_TO_WISHLIST\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17671,
+      "offset": 21368,
       "length": 19,
       "value": "\"INITIATE_CHECKOUT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17711,
+      "offset": 21408,
       "length": 13,
       "value": "\"START_TRIAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17745,
+      "offset": 21442,
       "length": 13,
       "value": "\"LEVEL_START\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17782,
+      "offset": 21479,
       "length": 16,
       "value": "\"LEVEL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17825,
+      "offset": 21522,
       "length": 19,
       "value": "\"TUTORIAL_COMPLETE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17861,
+      "offset": 21558,
       "length": 8,
       "value": "\"SEARCH\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17888,
+      "offset": 21585,
       "length": 11,
       "value": "\"VIEW_ITEM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17921,
+      "offset": 21618,
       "length": 14,
       "value": "\"VIEW_CONTENT\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 17951,
+      "offset": 21648,
       "length": 7,
       "value": "\"SHARE\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 18218,
+      "offset": 21915,
       "length": 10,
       "value": "[\"CUSTOM\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18307,
+      "offset": 22014,
       "length": 10,
       "value": "\"STANDARD\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18334,
+      "offset": 22041,
       "length": 8,
       "value": "\"CUSTOM\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18425,
+      "offset": 22142,
       "length": 11,
       "value": "\"AUTOMATIC\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 18453,
+      "offset": 22170,
       "length": 8,
       "value": "\"MANUAL\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 19838,
+      "offset": 23575,
       "length": 12,
       "value": "\"adback-ios\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 20167,
+      "offset": 23904,
       "length": 14,
       "value": "\"wrapper_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 20208,
+      "offset": 23945,
       "length": 17,
       "value": "\"wrapper_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 20628,
+      "offset": 24375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21802,
+      "offset": 25818,
       "length": 11,
       "value": "\"app_build\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21836,
+      "offset": 25852,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21870,
+      "offset": 25886,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21905,
+      "offset": 25921,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21953,
+      "offset": 25969,
       "length": 10,
       "value": "\"is_debug\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 21998,
+      "offset": 26014,
       "length": 9,
       "value": "\"os_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 22029,
+      "offset": 26045,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 22289,
+      "offset": 26315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 22570,
+      "offset": 26596,
       "length": 27,
       "value": "\"ad_services_token_present\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 22620,
+      "offset": 26646,
       "length": 13,
       "value": "\"deeplink_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 22658,
+      "offset": 26684,
       "length": 16,
       "value": "\"match_trace_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 23360,
+      "offset": 27396,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 23413,
+      "offset": 27449,
       "length": 13,
       "value": "\"external_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 23448,
+      "offset": 27484,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 23481,
+      "offset": 27517,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 25421,
+      "offset": 29639,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 26569,
+      "offset": 31023,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28535,
+      "offset": 33218,
       "length": 11,
       "value": "\"adback_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28564,
+      "offset": 33247,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28623,
+      "offset": 33306,
       "length": 21,
       "value": "\"client_timestamp_ms\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28688,
+      "offset": 33371,
       "length": 18,
       "value": "\"customer_user_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28747,
+      "offset": 33430,
       "length": 10,
       "value": "\"event_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28779,
+      "offset": 33462,
       "length": 12,
       "value": "\"event_name\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28813,
+      "offset": 33496,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28847,
+      "offset": 33530,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28923,
+      "offset": 33606,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 28976,
+      "offset": 33659,
       "length": 14,
       "value": "\"trigger_type\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 29016,
+      "offset": 33699,
       "length": 17,
       "value": "\"user_match_data\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 32351,
+      "offset": 43343,
       "length": 332,
       "value": "[\"ad_services_token\", \"ad_services_token_present\", \"adback_id\", \"appstack_id\", \"asa_token\", \"customer_user_id\", \"date_of_birth\", \"dob\", \"email\", \"external_id\", \"first_name\", \"idfa\", \"idfv\", \"install_id\", \"last_name\", \"phone\", \"phone_number\", \"transaction\", \"transaction_details\", \"user_id\"]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "BooleanLiteral",
-      "offset": 33370,
+      "offset": 44382,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "IntegerLiteral",
-      "offset": 33413,
+      "offset": 44425,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 33443,
+      "offset": 44455,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "IntegerLiteral",
-      "offset": 33472,
+      "offset": 44484,
       "length": 6,
       "value": "86400"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33588,
+      "offset": 44600,
       "length": 33,
       "value": "\"foreground_min_interval_seconds\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33654,
+      "offset": 44666,
       "length": 22,
       "value": "\"retry_delays_seconds\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 33708,
+      "offset": 44720,
       "length": 20,
       "value": "\"settlement_seconds\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Dictionary",
-      "offset": 34078,
+      "offset": 45090,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "Array",
-      "offset": 34161,
+      "offset": 45173,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34447,
+      "offset": 45459,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34484,
+      "offset": 45496,
       "length": 19,
       "value": "\"attribution_retry\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34547,
+      "offset": 45559,
       "length": 13,
       "value": "\"sdk_enabled\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/Adback.swift",
       "kind": "StringLiteral",
-      "offset": 34594,
+      "offset": 45606,
       "length": 26,
       "value": "\"use_install_detection_v2\""
     },
@@ -11305,267 +11788,323 @@
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2473,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "StringLiteral",
-      "offset": 1799,
+      "offset": 2573,
       "length": 32,
       "value": "\"app.adback.sdk.first_opened_at\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
+      "offset": 2649,
       "length": 27,
       "value": "\"app.adback.sdk.install_id\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "StringLiteral",
-      "offset": 1963,
+      "offset": 2737,
       "length": 41,
       "value": "\"app.adback.sdk.pending_install_snapshot\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2889,
+      "offset": 3624,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "Array",
-      "offset": 2960,
+      "offset": 3695,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "Array",
-      "offset": 3024,
+      "offset": 3759,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 3072,
+      "offset": 3879,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3927,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 3761,
+      "offset": 4395,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 3848,
+      "offset": 4484,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4814,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4901,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 3881,
+      "offset": 4934,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "Array",
-      "offset": 5269,
+      "offset": 6625,
       "length": 14,
       "value": "[2, 5, 10, 20]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5401,
+      "offset": 6757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "Dictionary",
-      "offset": 12608,
+      "offset": 14578,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "Dictionary",
-      "offset": 12890,
+      "offset": 14973,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 34132,
+      "offset": 39216,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 34166,
+      "offset": 39250,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 41047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 495,
+      "offset": 541,
       "length": 18,
       "value": "\"capacity_dropped\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 584,
       "length": 17,
       "value": "\"corrupt_dropped\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 628,
       "length": 19,
       "value": "\"encryption_failed\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 672,
       "length": 17,
       "value": "\"expired_dropped\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 716,
       "length": 19,
       "value": "\"identity_redacted\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 758,
+      "length": 15,
+      "value": "\"index_rebuilt\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 798,
       "length": 17,
       "value": "\"legacy_migrated\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 950,
+      "offset": 1055,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 1105,
+      "offset": 1210,
       "length": 38,
       "value": "\"app.adback.sdk.encrypted-event-queue\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1272,
       "length": 14,
       "value": "\"queue-key-v1\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 7178,
+      "offset": 7325,
       "length": 41,
       "value": "\"app.adback.sdk.encrypted_queue.index.v1\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 7258,
+      "offset": 7405,
       "length": 35,
       "value": "\"app.adback.sdk.manual_event_queue\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 7333,
+      "offset": 7480,
       "length": 36,
       "value": "\"app.adback.sdk.tracked_event_queue\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "StringLiteral",
-      "offset": 7405,
+      "offset": 7552,
       "length": 43,
       "value": "\"app.adback.sdk.encrypted_queue.record.v1.\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 7636,
+      "length": 41,
+      "value": "\"app.adback.sdk.encrypted_queue.reset.v1\""
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7477,
+      "offset": 7706,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7518,
+      "offset": 7747,
       "length": 9,
       "value": "1048576"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7575,
+      "offset": 7800,
+      "length": 9,
+      "value": "1000000"
+    },
+    {
+      "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7857,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7580,
+      "offset": 7862,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7585,
+      "offset": 7867,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7632,
+      "offset": 7914,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7636,
+      "offset": 7918,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7641,
+      "offset": 7923,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackEncryptedQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 7646,
+      "offset": 7928,
       "length": 2,
       "value": "60"
     },
@@ -11586,35 +12125,35 @@
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackNetworkPath.swift",
       "kind": "BooleanLiteral",
-      "offset": 5088,
+      "offset": 5109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackReinstallSignals.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1439,
       "length": 18,
       "value": "\"deviceKeychainId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackReinstallSignals.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1559,
       "length": 26,
       "value": "\"storeKitAppTransactionId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackReinstallSignals.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1688,
       "length": 18,
       "value": "\"syncedKeychainId\""
     },
     {
       "filePath": "\/Users\/mirkan\/Documents\/Projects\/mmp-project\/sdks\/ios\/Sources\/AdbackSDK\/AdbackReinstallSignals.swift",
       "kind": "StringLiteral",
-      "offset": 1927,
+      "offset": 2693,
       "length": 29,
       "value": "\"app.adback.sdk.reinstall.v1\""
     }

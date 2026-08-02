@@ -39,7 +39,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.3.2` or the latest available release.
+3. Select version `0.3.3` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -152,7 +152,7 @@ let latest = await Adback.refreshAttribution()
 
 The SDK also performs a bounded background refresh after a queued Apple Ads
 token submission. Status refreshes never resend the raw AdServices token. The
-handler runs on SDK asynchronous work; move UI work to `MainActor`.
+handler runs on one serial SDK callback queue; move UI work to `MainActor`.
 
 The base attribute keys are `adback_id`, `adback_match_confidence`, and
 `adback_source`. Paid-click matches may also include campaign, ad group, ad,
@@ -182,8 +182,7 @@ Superwall, App Store Server Notifications, or your backend integration.
 
 The mobile SDK does not expose SDK-side purchase, subscription, StoreKit
 transaction capture, manual revenue, transaction, or `transaction_details`
-APIs for the MVP. It reads verified app-transaction metadata only for reinstall
-classification.
+APIs for the MVP.
 
 ## React Native and Flutter Wrappers
 
@@ -196,9 +195,10 @@ as React Native or Flutter traffic without requiring extra app code.
 The SDK does not collect IDFA by default, precise location, contacts, photos,
 clipboard contents, or installed-app lists.
 
-During iOS install resolution, the SDK sends IDFV, opaque Keychain identifiers,
-verified app-transaction metadata, and app-container creation time for reinstall
-classification. User match data is sent only when your app passes it explicitly.
+For reinstall attribution, the SDK collects IDFV evidence, persistent Keychain
+UUIDs, verified StoreKit app history, and app-container creation time. The SDK
+sends these values only during install resolution. User match data is sent only
+when your app passes it explicitly.
 
 Pending events are stored as individually encrypted records. Raw email, phone,
 name, date-of-birth, external-ID, and customer-user-ID values are retained for
@@ -209,8 +209,8 @@ Temporary Keychain unavailability preserves encrypted records for a later retry;
 only malformed or authentication-failed ciphertext is discarded.
 
 The package includes `PrivacyInfo.xcprivacy` declarations for SDK install/user
-identifiers, event interaction data, Apple Ads and reinstall signals, and
-optional user match fields. Review Xcode's merged privacy report and your App
+identifiers, event interaction data, Apple Ads signals, and optional user match
+fields. Review Xcode's merged privacy report and your App
 Store Connect privacy answers for the Adback features your app enables.
 
 ## Signing

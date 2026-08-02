@@ -25,7 +25,8 @@ with `POST /v1/sdk/events`.
 
 Version `0.3.0` supports optional install `resolution` responses. The SDK
 retries `unmatched_settling` results while active and after foreground events.
-It stops after `matched` or `final_unattributed`.
+It stops after `matched`, `final_unattributed`, the settlement deadline, or a
+permanent HTTP error. Temporary failures use the configured retry delays.
 
 To enable Apple Ads attribution on iOS 14.3+, call:
 
@@ -67,7 +68,7 @@ the explicit refresh when the host integration needs an immediate status check:
 
 ```swift
 Adback.setAttributionUpdateHandler { attributes in
-  // The callback is asynchronous and is not guaranteed to run on MainActor.
+  // The callback uses a serial SDK queue and does not run on MainActor.
   Purchases.shared.setAttributes(attributes)
 }
 

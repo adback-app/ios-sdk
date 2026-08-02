@@ -4,6 +4,25 @@ All notable changes to the Adback iOS SDK appear in this file.
 
 ## Unreleased
 
+## 0.3.3 - 2026-08-02
+
+### Changed
+
+- Improved reinstall detection and attribution reliability.
+- Improved event delivery during initialization, offline use, and large bursts.
+
+### Reliability
+
+- Improved pending event recovery after upgrades, interrupted writes, and damaged local state.
+- Hardened SDK state, reset, and callback delivery under concurrent use.
+- Reduced memory use for large events and responses.
+- Improved attribution retries during temporary connectivity failures.
+
+### Developer Experience
+
+- Added Swift strict-concurrency validation.
+- Clarified supported Apple platforms.
+
 ## 0.3.2 - 2026-08-02
 
 ### Reliability

@@ -16,7 +16,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum AdbackEnvironment : Swift.String, Swift.Codable, Swift.Equatable {
+public enum AdbackEnvironment : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case development
   case production
   public init?(rawValue: Swift.String)
@@ -25,7 +25,7 @@ public enum AdbackEnvironment : Swift.String, Swift.Codable, Swift.Equatable {
     get
   }
 }
-public enum AdbackPlatform : Swift.String, Swift.Codable, Swift.Equatable {
+public enum AdbackPlatform : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case ios
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -33,7 +33,7 @@ public enum AdbackPlatform : Swift.String, Swift.Codable, Swift.Equatable {
     get
   }
 }
-public enum AdbackLogLevel : Swift.String, Swift.Codable, Swift.Equatable {
+public enum AdbackLogLevel : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case off
   case error
   case warn
@@ -45,7 +45,7 @@ public enum AdbackLogLevel : Swift.String, Swift.Codable, Swift.Equatable {
     get
   }
 }
-public struct AdbackOptions : Swift.Equatable {
+public struct AdbackOptions : Swift.Equatable, Swift.Sendable {
   public var apiBaseURL: Foundation.URL
   public var debug: Swift.Bool
   public var environment: AdbackSDK.AdbackEnvironment
@@ -56,7 +56,7 @@ public struct AdbackOptions : Swift.Equatable {
   public init(environment: AdbackSDK.AdbackEnvironment = .production, apiBaseURL: Foundation.URL = URL(string: "https://api.adback.app")!, debug: Swift.Bool = false, logLevel: AdbackSDK.AdbackLogLevel = .error, networkEnabled: Swift.Bool = true, wrapperName: Swift.String? = nil, wrapperVersion: Swift.String? = nil)
   public static func == (a: AdbackSDK.AdbackOptions, b: AdbackSDK.AdbackOptions) -> Swift.Bool
 }
-public struct AdbackConfiguration : Swift.Equatable {
+public struct AdbackConfiguration : Swift.Equatable, Swift.Sendable {
   public let apiKey: Swift.String
   public let options: AdbackSDK.AdbackOptions
   public static func == (a: AdbackSDK.AdbackConfiguration, b: AdbackSDK.AdbackConfiguration) -> Swift.Bool
@@ -76,7 +76,7 @@ public enum Adback {
   public static func flush() async
   public static func enableAppleAdsAttribution()
 }
-public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Equatable {
+public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case install
   case login
   case signUp
@@ -105,7 +105,7 @@ public enum AdbackStandardEvent : Swift.String, Swift.CaseIterable, Swift.Codabl
     get
   }
 }
-public enum AdbackEventType : Swift.String, Swift.Codable, Swift.Equatable {
+public enum AdbackEventType : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case standard
   case custom
   public init?(rawValue: Swift.String)
@@ -114,7 +114,7 @@ public enum AdbackEventType : Swift.String, Swift.Codable, Swift.Equatable {
     get
   }
 }
-public enum AdbackTriggerType : Swift.String, Swift.Codable, Swift.Equatable {
+public enum AdbackTriggerType : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable {
   case automatic
   case manual
   public init?(rawValue: Swift.String)
@@ -123,7 +123,7 @@ public enum AdbackTriggerType : Swift.String, Swift.Codable, Swift.Equatable {
     get
   }
 }
-public enum AdbackPropertyValue : Swift.Codable, Swift.Equatable {
+public enum AdbackPropertyValue : Swift.Codable, Swift.Equatable, Swift.Sendable {
   case bool(Swift.Bool)
   case double(Swift.Double)
   case int(Swift.Int)
@@ -132,7 +132,7 @@ public enum AdbackPropertyValue : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: AdbackSDK.AdbackPropertyValue, b: AdbackSDK.AdbackPropertyValue) -> Swift.Bool
 }
-public struct AdbackSDKContext : Swift.Codable, Swift.Equatable {
+public struct AdbackSDKContext : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var name: Swift.String
   public var version: Swift.String
   public var wrapperName: Swift.String?
@@ -142,7 +142,7 @@ public struct AdbackSDKContext : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AdbackEventContext : Swift.Codable, Swift.Equatable {
+public struct AdbackEventContext : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var appBuild: Swift.String?
   public var appVersion: Swift.String?
   public var bundleID: Swift.String?
@@ -158,7 +158,7 @@ public struct AdbackEventContext : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AdbackAttributionContext : Swift.Codable, Swift.Equatable {
+public struct AdbackAttributionContext : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var adServicesTokenPresent: Swift.Bool
   public var deeplinkID: Swift.String?
   public var matchTraceID: Swift.String?
@@ -167,7 +167,7 @@ public struct AdbackAttributionContext : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AdbackUserMatchData : Swift.Codable, Swift.Equatable {
+public struct AdbackUserMatchData : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var dateOfBirth: Swift.String?
   public var email: Swift.String?
   public var externalID: Swift.String?
@@ -179,7 +179,7 @@ public struct AdbackUserMatchData : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AdbackUser : Swift.Codable, Swift.Equatable {
+public struct AdbackUser : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var customerUserID: Swift.String?
   public var matchData: AdbackSDK.AdbackUserMatchData
   public init(customerUserID: Swift.String? = nil, matchData: AdbackSDK.AdbackUserMatchData = .init())
@@ -187,13 +187,18 @@ public struct AdbackUser : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum AdbackEventValidationError : Swift.Error, Swift.Equatable {
+public enum AdbackEventValidationError : Swift.Error, Swift.Equatable, Swift.Sendable {
   case identityFieldInProperties(Swift.String)
   case invalidCustomEventName(Swift.String)
   case invalidClientDate
+  case invalidPropertyCount
+  case invalidPropertyKey(Swift.String)
+  case invalidPropertyValue(Swift.String)
+  case propertiesTooLarge
+  case valueTooLong(Swift.String)
   public static func == (a: AdbackSDK.AdbackEventValidationError, b: AdbackSDK.AdbackEventValidationError) -> Swift.Bool
 }
-public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable {
+public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public let adbackID: Swift.String?
   public let appID: Swift.String
   public let attribution: AdbackSDK.AdbackAttributionContext
@@ -217,8 +222,8 @@ public struct AdbackEventEnvelope : Swift.Codable, Swift.Equatable {
   public static func == (a: AdbackSDK.AdbackEventEnvelope, b: AdbackSDK.AdbackEventEnvelope) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
-  public struct AttributionRetry : Swift.Codable, Swift.Equatable {
+public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public struct AttributionRetry : Swift.Codable, Swift.Equatable, Swift.Sendable {
     public let enabled: Swift.Bool
     public let foregroundMinIntervalSeconds: Swift.Int
     public let retryDelaysSeconds: [Swift.Int]
@@ -238,7 +243,7 @@ public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: AdbackSDK.AdbackRemoteConfig, b: AdbackSDK.AdbackRemoteConfig) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers final public class AdbackClient {
+@_hasMissingDesignatedInitializers final public class AdbackClient : @unchecked Swift.Sendable {
   convenience public init()
   @objc deinit
   final public var isConfigured: Swift.Bool {
