@@ -21,5 +21,7 @@ MVP commitments:
   carrier name, radio technology, local/public IP, VPN application identity, or
   continuous network history is collected, and no raw signal values are logged.
 
-`PrivacyInfo.xcprivacy` declares the SDK's app-local `UserDefaults` state under
-Apple's `NSPrivacyAccessedAPICategoryUserDefaults` required-reason API category.
+`PrivacyInfo.xcprivacy` declares the SDK's app-container creation-time access
+under Apple's `NSPrivacyAccessedAPICategoryFileTimestamp` category with reason
+`C617.1`. It also declares app-local `UserDefaults` state under the
+`NSPrivacyAccessedAPICategoryUserDefaults` required-reason API category.

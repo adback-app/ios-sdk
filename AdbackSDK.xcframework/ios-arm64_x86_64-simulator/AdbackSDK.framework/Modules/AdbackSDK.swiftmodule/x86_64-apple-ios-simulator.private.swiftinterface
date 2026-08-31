@@ -228,9 +228,9 @@ public struct AdbackRemoteConfig : Swift.Codable, Swift.Equatable, Swift.Sendabl
     public let foregroundMinIntervalSeconds: Swift.Int
     public let retryDelaysSeconds: [Swift.Int]
     public let settlementSeconds: Swift.Int
+    public init(from decoder: any Swift.Decoder) throws
     public static func == (a: AdbackSDK.AdbackRemoteConfig.AttributionRetry, b: AdbackSDK.AdbackRemoteConfig.AttributionRetry) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
   }
   public let appID: Swift.String
   public let attributionRetry: AdbackSDK.AdbackRemoteConfig.AttributionRetry?

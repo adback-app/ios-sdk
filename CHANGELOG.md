@@ -2,7 +2,20 @@
 
 All notable changes to the Adback iOS SDK appear in this file.
 
-## Unreleased
+## 0.3.4 - 2026-08-31
+
+### Fixed
+
+- Declared FileTimestamp access for app-container creation time used by
+  reinstall attribution.
+- Kept attribution retries enabled when remote retry configuration is partial
+  or malformed.
+- Moved preconfiguration event binding into batched asynchronous work and
+  retried temporary binding failures before delivery.
+- Reduced encrypted queue recovery work during repeated reads.
+- Preserved automatic INSTALL event IDs and sent markers across SDK reset.
+- Rejected invalid screen measurements and cleared permanently rejected
+  install snapshots.
 
 ## 0.3.3 - 2026-08-02
 

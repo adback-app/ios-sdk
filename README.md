@@ -39,7 +39,7 @@ In Xcode:
 https://github.com/adback-app/ios-sdk
 ```
 
-3. Select version `0.3.3` or the latest available release.
+3. Select version `0.3.4` or the latest available release.
 4. Add the `AdbackSDK` product to your app target.
 
 ## Initialization
@@ -209,9 +209,9 @@ Temporary Keychain unavailability preserves encrypted records for a later retry;
 only malformed or authentication-failed ciphertext is discarded.
 
 The package includes `PrivacyInfo.xcprivacy` declarations for SDK install/user
-identifiers, event interaction data, Apple Ads signals, and optional user match
-fields. Review Xcode's merged privacy report and your App
-Store Connect privacy answers for the Adback features your app enables.
+identifiers, event interaction data, Apple Ads signals, app-container timestamp
+access, and optional user match fields. Review Xcode's merged privacy report and
+your App Store Connect privacy answers for the Adback features your app enables.
 
 ## Signing
 
